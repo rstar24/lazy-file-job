@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.23)  29 APR 2024 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.23)  29 APR 2024 21:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/python_file_creation_automation/src/tex/front-page.tex
-(e:/python_file_creation_automation/src/tex/front-page.tex
+**e:/python_file_creation_automation/src/front-page/front-page.tex
+(e:/python_file_creation_automation/src/front-page/front-page.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -274,7 +274,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip52
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 12.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 15.
  (C:\Program Files\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -282,7 +282,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 12.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 15.
  (C:\Users\risha\AppData\Roaming\MiKTeX\tex/latex/txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 ) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -292,44 +292,44 @@ File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 ) (front-page.aux)
 \openout1 = `front-page.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 12.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 12.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 15.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 15.
  (C:\Users\risha\AppData\Roaming\MiKTeX\tex/latex/txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 12.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 15.
  (C:\Users\risha\AppData\Roaming\MiKTeX\tex/latex/txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 12.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 15.
  (C:\Users\risha\AppData\Roaming\MiKTeX\tex/latex/txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 12.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 15.
  (C:\Users\risha\AppData\Roaming\MiKTeX\tex/latex/txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  (C:\Users\risha\AppData\Roaming\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 12.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 15.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count289
@@ -349,33 +349,27 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 12.
+Package hyperref Info: Link coloring OFF on input line 15.
  (front-page.out) (front-page.out)
 \@outlinefile=\write3
 \openout3 = `front-page.out'.
 
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 17.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <22> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 17.
-<logo-2.png, id=3, 589.06868pt x 479.98189pt>
-File: logo-2.png Graphic file (type png)
-<use logo-2.png>
-Package pdftex.def Info: logo-2.png  used on input line 33.
-(pdftex.def)             Requested size: 256.0748pt x 208.65128pt.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 28.
+<logo-3.png, id=3, 588.38689pt x 439.07434pt>
+File: logo-3.png Graphic file (type png)
+<use logo-3.png>
+Package pdftex.def Info: logo-3.png  used on input line 39.
+(pdftex.def)             Requested size: 256.0748pt x 191.08958pt.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 45.
-LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 45.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 43.
  [1
 
-
-{C:/Users/risha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <./logo-2.png>] [2
-
-
-] (front-page.aux)
+{C:/Users/risha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <./logo-3.png>] (front-page.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -384,17 +378,17 @@ Package rerunfilecheck Info: File `front-page.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13368 strings out of 474424
- 262744 string characters out of 5751554
+ 13357 strings out of 474424
+ 262672 string characters out of 5751554
  1930496 words of memory out of 5000000
- 35589 multiletter control sequences out of 15000+600000
- 567900 words of font info for 52 fonts, out of 8000000 for 9000
+ 35585 multiletter control sequences out of 15000+600000
+ 567245 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,80p,363b,891s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/risha/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on front-page.pdf (2 pages, 548262 bytes).
+ 75i,5n,80p,286b,890s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on front-page.pdf (1 page, 503399 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
+ 25 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

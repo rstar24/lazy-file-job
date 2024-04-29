@@ -1,6 +1,6 @@
-PWD e:\python_file_creation_automation\src\tex
+PWD e:\python_file_creation_automation\src\front-page
 INPUT C:\Users\risha\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\python_file_creation_automation\src\tex\front-page.tex
+INPUT e:\python_file_creation_automation\src\front-page\front-page.tex
 OUTPUT front-page.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
@@ -142,17 +142,16 @@ OUTPUT front-page.out
 OUTPUT front-page.pdf
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txb.tfm
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txb.tfm
-INPUT .\logo-2.png
-INPUT .\logo-2.png
-INPUT .\logo-2.png
-INPUT .\logo-2.png
-INPUT .\logo-2.png
-INPUT .\logo-2.png
-INPUT .\logo-2.png
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txb.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txi.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txbi.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txbi.tfm
+INPUT .\logo-3.png
+INPUT .\logo-3.png
+INPUT .\logo-3.png
+INPUT .\logo-3.png
+INPUT .\logo-3.png
+INPUT .\logo-3.png
+INPUT .\logo-3.png
+INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txb.tfm
+INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txb.vf
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmb.tfm
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxb.tfm
@@ -161,20 +160,16 @@ INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txb.vf
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmb.tfm
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxb.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txbi.vf
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmbi.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxbi.tfm
+INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txb.vf
+INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmb.tfm
+INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxb.tfm
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\vf\public\txfonts\txr.vf
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
 INPUT front-page.aux
 INPUT .\front-page.out
 INPUT .\front-page.out
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\rtxr.pfb
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\type1\public\txfonts\rtxr.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
