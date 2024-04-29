@@ -1,0 +1,204 @@
+\documentclass{report}
+\usepackage{listings}
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\lstset{
+    language=Python,
+    tabsize=4,
+    showspaces=false,
+    showstringspaces=false,
+    keepspaces=true,
+    commentstyle=\color{green!50!black},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red}
+}
+
+\begin{document}
+
+\pagebreak
+
+\setcounter{chapter}{1}
+\setcounter{section}{0}
+\section{Python}
+\qs{}{Explain the difference between the list, tuple , set and dictionary ?}
+\sol 
+\begin{lstlisting}[language=Python]
+	print("Rishabh Rathore")
+	print("0827CI211155")
+
+	# List
+	my_list = [1, 2, 3, 4, 5]
+
+	print(my_list)
+	# Lists maintain order
+	for item in my_list:
+    	print(item)
+
+	# Tuple
+	my_tuple = (1, 2, 3, 4, 5)
+
+	# Tuples are immutable - attempting to modify will raise an error
+
+	for item in my_tuple:
+    	print(item)
+
+	# Set
+	my_set = {1, 2, 3, 4, 5}
+
+	# Sets are mutable
+	my_set.add(6)
+	print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+	# Sets do not maintain order
+	for item in my_set:
+ 	   print(item)
+
+	# Dictionary
+	my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+	# Dictionaries are mutable
+	my_dict['age'] = 35
+	print(my_dict)  # Output: {'name': 'John', 'age': 35, 'city': 'New York'}
+
+	# Dictionaries do not maintain order (prior to Python 3.7)
+	for key, value in my_dict.items():
+    	print(key, ':', value)
+
+
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Rishabh Rathore
+	0827CI211155
+
+
+	[10, 2, 3, 4, 5]
+
+	10
+	2
+	3
+	4
+	5
+
+	1
+	2
+	3
+	4
+	5
+
+	{1,2,3,4,5,6}
+
+	1
+	2
+	3
+	4
+	5
+	6
+
+	{'name': 'John', 'age': 35, 'city': 'New York'}
+
+	name : John
+	age : 35
+	city : New York
+
+\end{verbatim}
+
+\nt{To be or not to be}
+
+\newpage
+
+
+\qs{}{Explain the difference between the list, tuple , set and dictionary ?}
+\sol 
+\begin{lstlisting}[language=Python]
+	print("Rishabh Rathore")
+	print("0827CI211155")
+
+	# List
+	my_list = [1, 2, 3, 4, 5]
+
+	print(my_list)
+	# Lists maintain order
+	for item in my_list:
+    	print(item)
+
+	# Tuple
+	my_tuple = (1, 2, 3, 4, 5)
+
+	# Tuples are immutable - attempting to modify will raise an error
+
+	for item in my_tuple:
+    	print(item)
+
+	# Set
+	my_set = {1, 2, 3, 4, 5}
+
+	# Sets are mutable
+	my_set.add(6)
+	print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+	# Sets do not maintain order
+	for item in my_set:
+ 	   print(item)
+
+	# Dictionary
+	my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+	# Dictionaries are mutable
+	my_dict['age'] = 35
+	print(my_dict)  # Output: {'name': 'John', 'age': 35, 'city': 'New York'}
+
+	# Dictionaries do not maintain order (prior to Python 3.7)
+	for key, value in my_dict.items():
+    	print(key, ':', value)
+
+
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Rishabh Rathore
+	0827CI211155
+
+
+	[10, 2, 3, 4, 5]
+
+	10
+	2
+	3
+	4
+	5
+
+	1
+	2
+	3
+	4
+	5
+
+	{1,2,3,4,5,6}
+
+	1
+	2
+	3
+	4
+	5
+	6
+
+	{'name': 'John', 'age': 35, 'city': 'New York'}
+
+	name : John
+	age : 35
+	city : New York
+
+\end{verbatim}
+
+\nt{To be or not to be}
+
+
+
+\end{document}
