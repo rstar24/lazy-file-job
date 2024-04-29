@@ -18,21 +18,22 @@ for x in students['Student_Name']:
     names.append(x)
 
 copy_path_f1 = [ build_dir + x + '/' for x in names ]
-copy_commad_array = ['cp -r ' + front_page_dir +' ' + build_dir + x for x in students['Student_Name'] ]
+copy_command_array = ['cp -r ' + front_page_dir +' ' + build_dir + x for x in students['Student_Name'] ]
 
 #print(copy_commad_array[0])
 #print(copy_path_f1)
 
 for x in copy_command_array:
-    shutil.run(x,shell=True)
+    subprocess.run(x,shell=True)
 
+"""
 for x in copy_path_f1:
     shutil.copytree(front_page_dir,x)
     
 front_page_files = []
 for x in copy_path_f1:
     front_page_files.append(x + '/front-page/template.tex')
-
+"""
 #print(front_page_files)
 
 # Now build the sed command for changing the 
@@ -43,7 +44,7 @@ for x in copy_path_f1:
 sed_command_array = []
 
 for index, row in students.iterrows():
-    s = "sed -i 's/Rishab Rathore/{}/g' 's/0827CI211155/{}/g' /mnt/e/python_file_creation_automation/build/{}/front-page/template.tex".format(row['Student Name'],row['Enrollment no'],row['Student_Name'])
+    s = "sed -i 's/Rishab Rathore/{}/g' 's/0827CI211155/{}/g' /mnt/e/python_file_creation_automation/build/{}/front-page/front-page.tex".format(row['Student Name'],row['Enrollment no'],row['Student_Name'])
     sed_command_array.append(s)
 
 print(sed_command_array[0])
