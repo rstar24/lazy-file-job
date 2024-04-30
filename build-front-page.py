@@ -44,7 +44,7 @@ for x in copy_path_f1:
 sed_command_array = []
 
 for index, row in students.iterrows():
-    s = "sed -i 's/Rishab\ Rathore/{}/g; s/0827CI211155/{}/g' /mnt/e/python_file_creation_automation/build/{}/front-page/front-page.tex".format(row['Student Name'].replace(" ","\ "),row['Enrollment no'],row['Student_Name'])
+    s = "sed -i 's/Rishabh\ Rathore/{}/g; s/0827CI211155/{}/g' /mnt/e/python_file_creation_automation/build/{}/front-page/front-page.tex".format(row['Student Name'].replace(" ","\ "),row['Enrollment no'],row['Student_Name'])
     sed_command_array.append(s)
 
 print(sed_command_array[0])
