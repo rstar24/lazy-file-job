@@ -20,7 +20,6 @@ for x in students['Student_Name']:
     front_page_latex_files.append(x)
 
 
-# print(front_page_latex_files[0])
 
 
 
