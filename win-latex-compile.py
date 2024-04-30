@@ -5,12 +5,15 @@ import numpy as np
 import shutil
 import subprocess
 
-students = pd.read_csv("E:\\python_file_creation_automation\\students.csv")
-build_dir = 'E:\\python_file_creation_automation\\'
+students_csv_path = os.path.abspath('students.csv')
+
+students = pd.read_csv(students_csv_path)
+build_dir = 
 front_mklatex_base_dir = 'E:\\python_file_creation_automation\\build\\'
 
 
 students['Student_Name'] = students['Student Name'].str.replace(' ','_')
+
 
 front_page_latex_files = []
 

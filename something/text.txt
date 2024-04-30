@@ -1,1 +1,0 @@
-pdflatex --max-print-line=10000 -synctex=1 -interaction=nonstopmode -file-line-error-recorder "e:/python_file_creation_automation/src/front-page/front-page.tex"
