@@ -1,3 +1,6 @@
+# Instruction 
+* Add the python programs in the notebook directory
+
 # Objective 
 * I have wasted good amount of time learning system scripting 
 * This is good time to put it to some real good work
