@@ -23,6 +23,7 @@
 \setcounter{section}{0}
 \section{Python}
 
+% 1
 \qs{}{Explain the difference between the list, tuple , set and dictionary ?}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -112,6 +113,7 @@
 
 \newpage
 
+% 2
 \qs{}{Write a program to Counts the number of occurrences of item 50 from a tuple.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -125,12 +127,12 @@
             count += 1
     return count
 
-# Example tuple
-example_tuple = (10, 20, 30, 40, 50, 50, 50, 60, 70)
+	# Example tuple
+	example_tuple = (10, 20, 30, 40, 50, 50, 50, 60, 70)
 
-# Count occurrences of item 50
-occurrences = count_occurrences(example_tuple, 50)
-print("Number of occurrences of item 50:", occurrences)
+	# Count occurrences of item 50
+	occurrences = count_occurrences(example_tuple, 50)
+	print("Number of occurrences of item 50:", occurrences)
 
 
 \end{lstlisting}
@@ -147,7 +149,7 @@ print("Number of occurrences of item 50:", occurrences)
 
 \newpage
 
-
+% 3
 \qs{}{ Write a program to Check if all items in the tuple are the same}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -157,21 +159,21 @@ print("Number of occurrences of item 50:", occurrences)
     # Check if all elements are the same
     return all(element == tuple[0] for element in tuple)
 
-# Example tuples
-tuple1 = (10, 10, 10, 10)
-tuple2 = (10, 20, 10, 10)
+	# Example tuples
+	tuple1 = (10, 10, 10, 10)
+	tuple2 = (10, 20, 10, 10)
 
-# Check if all items in tuple1 are the same
-if all_same(tuple1):
-    print("All items in tuple1 are the same")
-else:
-    print("Not all items in tuple1 are the same")
+	# Check if all items in tuple1 are the same
+	if all_same(tuple1):
+		print("All items in tuple1 are the same")
+	else:
+		print("Not all items in tuple1 are the same")
 
-# Check if all items in tuple2 are the same
-if all_same(tuple2):
-    print("All items in tuple2 are the same")
-else:
-    print("Not all items in tuple2 are the same")
+	# Check if all items in tuple2 are the same
+	if all_same(tuple2):
+		print("All items in tuple2 are the same")
+	else:
+		print("Not all items in tuple2 are the same")
   
 
 \end{lstlisting}
@@ -199,17 +201,18 @@ else:
 	print("0827CI211155")
 
 	# Define the tuple with different types of elements
-mixed_tuple = (10, 3.14, [1, 2, 3], ('a', 'b', 'c'))
+	mixed_tuple = (10, 3.14, [1, 2, 3], ('a', 'b', 'c'))
 
-# Function to print an element from a list within the tuple
-def print_list_element(tuple):
-    # Get the list from the tuple
-    list_element = tuple[2]
-    # Print an element from the list
-    print("Element from the list within the tuple:", list_element[1])
+	# Function to print an element from a list within the tuple
+	def print_list_element(tuple):
+		# Get the list from the tuple
+		list_element = tuple[2]
+		# Print an element from the list
+		print("Element from the list within the tuple:", list_element[1])
 
-# Call the function to print an element from the list within the tuple
-print_list_element(mixed_tuple)
+	# Call the function to print an element from the list within the tuple
+	print_list_element(mixed_tuple)
+
 \end{lstlisting}
 
 \begin{verbatim}
@@ -240,14 +243,14 @@ print_list_element(mixed_tuple)
 	indian_cities = ('Delhi', 'Mumbai', 'Bangalore', 'Kolkata', 'Chennai', 'Hyderabad',
 					 'Pune', 'Ahmedabad', 'Jaipur', 'Lucknow')
 
-# Input city to check
-city_to_check = input("Enter the name of the city to check: ")
+	# Input city to check
+	city_to_check = input("Enter the name of the city to check: ")
 
-# Check if the city is present in the tuple
-if city_present(city_to_check, indian_cities):
-    print(city_to_check, "is present in the tuple of Indian cities.")
-else:
-    print(city_to_check, "is not present in the tuple of Indian cities.")
+	# Check if the city is present in the tuple
+	if city_present(city_to_check, indian_cities):
+		print(city_to_check, "is present in the tuple of Indian cities.")
+	else:
+		print(city_to_check, "is not present in the tuple of Indian cities.")
 \end{lstlisting}
 
 \begin{verbatim}
@@ -286,7 +289,9 @@ else:
 
 	# Count occurrences of the word in the tuple
 	occurrences = count_word_occurrences(word_to_count, tuple_of_strings)
-	print("Number of occurrences of", word_to_count, "in the tuple:", occurrences)
+	print("Number of occurrences of", 
+		word_to_count, "in the tuple:",
+		 occurrences)
 
 \end{lstlisting}
 
@@ -727,14 +732,14 @@ else:
     # Check if set1 is a subset of set2
     return set1.issubset(set2)
 
-# Example usage:
-set1 = {1, 2, 3}
-set2 = {1, 2, 3, 4, 5}
+	# Example usage:
+	set1 = {1, 2, 3}
+	set2 = {1, 2, 3, 4, 5}
 
-if is_subset(set1, set2):
-    print("set1 is a subset of set2")
-else:
-    print("set1 is not a subset of set2")
+	if is_subset(set1, set2):
+		print("set1 is a subset of set2")
+	else:
+		print("set1 is not a subset of set2")
 \end{lstlisting}
 
 \begin{verbatim}
@@ -1756,11 +1761,11 @@ sample list:[1,2,3,3,3,3,4,5],Unique list:[1,2,3,4,5]}
     """
     return list(set(input_list))
 
-# Example usage:
-original_list = [1, 2, 2, 3, 3, 4, 5, 5]
-distinct_list = distinct_elements(original_list)
-print("Original List:", original_list)
-print("Distinct List:", distinct_list)
+	# Example usage:
+	original_list = [1, 2, 2, 3, 3, 4, 5, 5]
+	distinct_list = distinct_elements(original_list)
+	print("Original List:", original_list)
+	print("Distinct List:", distinct_list)
   
 
 \end{lstlisting}
