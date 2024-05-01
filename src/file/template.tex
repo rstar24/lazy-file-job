@@ -23,7 +23,7 @@
 \setcounter{section}{0}
 \section{Python}
 
-% 1
+% q 1
 \qs{}{Explain the difference between the list, tuple , set and dictionary ?}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -193,7 +193,7 @@
 
 \newpage
 
-
+% q 4
 \qs{}{Write a Program to create a tuple which is having integer,float,list and tuple as its elements and print an element present in list of these tuple}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -228,7 +228,7 @@
 
 \newpage
 
-
+% q 5
 \qs{}{Write a program to create a tuple with the name of 10 cities of India Check whether a City is present in the tuple or not}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -240,8 +240,10 @@
     return city in cities_tuple
 
 	# Create a tuple with the names of 10 cities of India
-	indian_cities = ('Delhi', 'Mumbai', 'Bangalore', 'Kolkata', 'Chennai', 'Hyderabad',
-					 'Pune', 'Ahmedabad', 'Jaipur', 'Lucknow')
+	indian_cities = ('Delhi', 'Mumbai', 'Bangalore', 
+					'Kolkata','Chennai', 'Hyderabad',
+					 'Pune', 'Ahmedabad', 'Jaipur', 
+					 'Lucknow')
 
 	# Input city to check
 	city_to_check = input("Enter the name of the city to check: ")
@@ -266,7 +268,7 @@
 
 \newpage
 
-
+% q 6
 \qs{}{Write a program to get the number of occurrence of a word in tuple.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -310,7 +312,7 @@
 
 \newpage
 
-
+% q 7
 \qs{}{Write a program to get the index of a word in tuple}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -357,7 +359,7 @@
 
 \newpage
 
-
+% q 8
 \qs{}{Write a program to create four tuples viz roll no. name. CGPA and SGPA of students. Print individual student's details using these 4 tuples.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -423,7 +425,7 @@
 
 \newpage
 
-
+% q 9
 \qs{}{write a Python program to create a set.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -450,6 +452,7 @@
 \newpage
 
 
+% q 10
 \qs{}{Write a Python program to iterate over sets.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -484,6 +487,7 @@
 \newpage
 
 
+% q 11
 \qs{}{Write a Python program to add member(s) to a set.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -522,6 +526,7 @@
 \newpage
 
 
+% q 12
 \qs{}{Write a Python program to remove Item(s) from a given set.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -558,6 +563,7 @@
 \newpage
 
 
+% q 13
 \qs{}{Write a Python program to remove an item from a set if it is}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -603,6 +609,7 @@
 \newpage
 
 
+% q 13
 \qs{}{Write a Python program to create an intersection of sets.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -1354,7 +1361,8 @@
 
     Parameters:
     name: The name of the person to greet.
-    greeting \(optional\): The greeting to use. Defaults to "Hello" if not specified.
+    greeting (optional): 
+	The greeting to use. Defaults to "Hello" if not specified.
 
     Returns:
     str: The greeting message.
@@ -1576,7 +1584,8 @@
 	# Call the function
 	demonstrate_scope()
 	
-	# Attempt to access local_variable outside the function - this will raise an error
+	# Attempt to access local_variable 
+	# outside the function - this will raise an error
 	# print("Outside the function:")
 	# print("Local variable:", local_variable)
 	
@@ -1676,7 +1685,8 @@
 	if check_range(num, start_range, end_range):
 		print(f"{num} falls within the range [{start_range}, {end_range}]")
 	else:
-		print(f"{num} does not fall within the range [{start_range}, {end_range}]")
+		print(f"{num} does not fall within the range [{start_range},
+		 {end_range}]")
   
 
 \end{lstlisting}
@@ -1708,7 +1718,8 @@
     string (str): The input string.
 
     Returns:
-    tuple: A tuple containing the count of upper case letters and lower case letters, respectively.
+    tuple: A tuple containing the count of upper 
+	case letters and lower case letters, respectively.
     """
     upper_count = 0
     lower_count = 0
@@ -1930,7 +1941,8 @@ sample list:[1,2,3,3,3,3,4,5],Unique list:[1,2,3,4,5]}
 	print("0827CI211155")
 	def squares_list():
     """
-    Function to create and print a list where the values are the squares of numbers between 1 and 30.
+    Function to create and print a list where the values 
+	are the squares of numbers between 1 and 30.
 
     Returns:
     list: A list containing the squares of numbers between 1 and 30.
@@ -2055,12 +2067,12 @@ sample list:[1,2,3,3,3,3,4,5],Unique list:[1,2,3,4,5]}
 
 
 \newpage
-% TODO solve the red line problem
-\qs{Write a program to demonstrate the use of _init_\(\) }
+% TODO solve the red line problem %
 
+\qs{Write a program to demonstrate the use of init }
 \sol
-
 \begin{lstlisting}[language=Python]
+
 	print("Rishabh Rathore")
 	print("0827CI211155")
 	class Car:
