@@ -5,7 +5,7 @@ import re
 import time
 import pandas as pd
 import numpy as np
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfWriter
 
 start_time = time.time()
 
@@ -142,11 +142,12 @@ def compile_tex():
     file_paths = []
     front_paths = []
     for x in students_build_dirs_paths:
+        # t0 = os.path.join(x,'front-page')
         t1 = os.path.join(x,'file')
         t2 = os.path.join(t1,'template.tex')
         file_paths.append(t2)
         t3 = os.path.join(x,'front-page')
-        t4 = os.path.join(t1,'front-page.tex')
+        t4 = os.path.join(t3,'front-page.tex')
         front_paths.append(t4)
         # file_paths.append(os.path.join(x,'file\\template.tex'))
         # front_paths.append(os.path.join(x,'front-page\\front-page.tex'))
@@ -155,30 +156,35 @@ def compile_tex():
     # print("len(file_paths) = {}".format(len(file_paths)))
     # print("len(front_paths) = {}".format(len(front_paths)))
     
+    print("file path 0 {}".format(file_paths[0]))
+    print("front path 0 {}".format(front_paths[0]))
     
-    
-    command_compile_file_tex = []
-    command_compile_front_tex = []
+    # names = students['Student_Name'].tolist()
     
     # for i in range(len(students_build_dirs_paths)):
+    
+    zz = 0 # Erase me later
     for x in students_build_dirs_paths:
-        for i in range(5):
-            t1 = os.path.join(x,'file')
-            t2 = os.path.join(t1,'template.tex')
-            t3 = os.path.join(x,'front-page')
-            t4 = os.path.join(t1,'front-page.tex')
-            temp = "pdflatex --include-directory={} --output-directory={} {}".format(t1,t2,file_paths[i])
-            temp2= "pdflatex --output-directory={} {}".format(t3,t4)
-            subprocess.run(temp)
-            subprocess.run(temp2)
-        # print(temp)
-        
-        # subprocess.run(temp,shell=True)
-        # result = subprocess.run(temp,shell=True,capture_output=True,text=True)
-        # if(result.returncode == 0):
-        #     print("compiled It")
-        # else:
-        #     print("try again Rishabh")
+        if (zz<2): # Uncomment this line for full compile
+            t0 = os.path.join(x,'file')
+            t1 = os.path.join(t0,'template.tex')
+            t2 = os.path.join(x,'front-page')
+            t3 = os.path.join(t2,'front-page.tex')
+            temp = "pdflatex --include-directory={} --output-directory={} {}".format(t0,t0,t1)
+            temp2 = "pdflatex --include-directory={} --output-directory={} {}".format(t2,t2,t3)
+            result_1 = subprocess.run(temp,stdout=subprocess.DEVNULL,shell=True,text=False)
+            if(result_1.returncode == 0):
+                print("Compiled File")
+            else:
+                print("try again Rishabh")
+            # result = subprocess.run(temp2)
+            # subprocess.run(temp,shell=True)
+            result_2 = subprocess.run(temp2,stdout=subprocess.DEVNULL,shell=True,text=False)
+            if(result_2.returncode == 0):
+                print("Compiled Front ")
+            else:
+                print("try again Rishabh")
+        zz = zz+1 # Please erase it later
         
     # for i in range(len(front_paths)):
     #     temp = "pdflatex -output-directory={} {}".fromat(os.path.curdir(file_paths[i]),file_paths[i])
@@ -190,9 +196,58 @@ def compile_tex():
 
 compile_tex()
 
+# Now finally Merge the output pdfs
+
+
+
+def merge_output():
+    file_paths = []
+    front_paths = []
+    for x in students_build_dirs_paths:
+        # t0 = os.path.join(x,'front-page')
+        t1 = os.path.join(x,'file')
+        t2 = os.path.join(t1,'template.pdf')
+        file_paths.append(t2)
+        t3 = os.path.join(x,'front-page')
+        t4 = os.path.join(t3,'front-page.pdf')
+        front_paths.append(t4)
+    output_paths = []
+    
+    names = students['Student_Name'].to_list()
+    
+    
+    for i in names:
+        i += '.pdf'
+        temp = os.path.join(build_dir_final,i)
+        output_paths.append(temp)
+    
+    
+    for x in students_build_dirs_paths:
+        # t0 = os.path.join(x,'front-page')
+        t1 = os.path.join(x,'file')
+        t2 = os.path.join(t1,'template.tex')
+        file_paths.append(t2)
+        t3 = os.path.join(x,'front-page')
+        t4 = os.path.join(t3,'front-page.tex')
+        front_paths.append(t4)
+    
+    zz = 0
+    for i in range(len(file_paths)):
+        if (zz < 2):
+            merger = PdfWriter()
+            merger.append(front_paths[i])
+            merger.append(file_paths[i])
+            merger.write(output_paths[i])
+            merger.close()
+            print("Final Pdf Created")
+        zz = zz + 1
+    
+merge_output()
+
 end_time = time.time()
 temp_0 = end_time-start_time
 print("Time taken by the script {}".format(temp_0))
+print("Thank God It works Now")
 # print(proj_root_dir)
 # print(build_dir_final)
 # print(build_dir_students)
