@@ -22,6 +22,96 @@
 \setcounter{chapter}{1}
 \setcounter{section}{0}
 \section{Python}
+
+\qs{}{Explain the difference between the list, tuple , set and dictionary ?}
+\sol 
+\begin{lstlisting}[language=Python]
+	print("Rishabh Rathore")
+	print("0827CI211155")
+
+	# List
+	my_list = [1, 2, 3, 4, 5]
+
+	print(my_list)
+	# Lists maintain order
+	for item in my_list:
+    	print(item)
+
+	# Tuple
+	my_tuple = (1, 2, 3, 4, 5)
+
+	# Tuples are immutable - attempting to modify will raise an error
+
+	for item in my_tuple:
+    	print(item)
+
+	# Set
+	my_set = {1, 2, 3, 4, 5}
+
+	# Sets are mutable
+	my_set.add(6)
+	print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+	# Sets do not maintain order
+	for item in my_set:
+ 	   print(item)
+
+	# Dictionary
+	my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+	# Dictionaries are mutable
+	my_dict['age'] = 35
+	print(my_dict)  # Output: {'name': 'John', 'age': 35, 'city': 'New York'}
+
+	# Dictionaries do not maintain order (prior to Python 3.7)
+	for key, value in my_dict.items():
+    	print(key, ':', value)
+
+
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Rishabh Rathore
+	0827CI211155
+
+
+	[10, 2, 3, 4, 5]
+
+	10
+	2
+	3
+	4
+	5
+
+	1
+	2
+	3
+	4
+	5
+
+	{1,2,3,4,5,6}
+
+	1
+	2
+	3
+	4
+	5
+	6
+
+	{'name': 'John', 'age': 35, 'city': 'New York'}
+
+	name : John
+	age : 35
+	city : New York
+
+\end{verbatim}
+
+
+
+\newpage
+
 \qs{}{Write a program to Counts the number of occurrences of item 50 from a tuple.}
 \sol 
 \begin{lstlisting}[language=Python]
@@ -53,7 +143,7 @@ print("Number of occurrences of item 50:", occurrences)
 	Number of occurrences of item 50: 3
 \end{verbatim}
 
-\nt{To be or not to be}
+
 
 \newpage
 
@@ -96,7 +186,7 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 
 
 \newpage
@@ -131,7 +221,7 @@ print_list_element(mixed_tuple)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 
 \newpage
 
@@ -146,8 +236,9 @@ print_list_element(mixed_tuple)
     # Check if the city is present in the tuple
     return city in cities_tuple
 
-# Create a tuple with the names of 10 cities of India
-indian_cities = ('Delhi', 'Mumbai', 'Bangalore', 'Kolkata', 'Chennai', 'Hyderabad', 'Pune', 'Ahmedabad', 'Jaipur', 'Lucknow')
+	# Create a tuple with the names of 10 cities of India
+	indian_cities = ('Delhi', 'Mumbai', 'Bangalore', 'Kolkata', 'Chennai', 'Hyderabad',
+					 'Pune', 'Ahmedabad', 'Jaipur', 'Lucknow')
 
 # Input city to check
 city_to_check = input("Enter the name of the city to check: ")
@@ -169,7 +260,7 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -186,15 +277,17 @@ else:
         count += string.count(word)
     return count
 
-# Example tuple of strings
-tuple_of_strings = ("apple banana", "banana orange", "banana apple", "orange mango banana")
+	# Example tuple of strings
+	tuple_of_strings = ("apple banana", "banana orange", 
+					"banana apple", "orange mango banana")
 
-# Word to count occurrences of
-word_to_count = input("Enter the word to count occurrences: ")
+	# Word to count occurrences of
+	word_to_count = input("Enter the word to count occurrences: ")
 
-# Count occurrences of the word in the tuple
-occurrences = count_word_occurrences(word_to_count, tuple_of_strings)
-print("Number of occurrences of", word_to_count, "in the tuple:", occurrences)
+	# Count occurrences of the word in the tuple
+	occurrences = count_word_occurrences(word_to_count, tuple_of_strings)
+	print("Number of occurrences of", word_to_count, "in the tuple:", occurrences)
+
 \end{lstlisting}
 
 \begin{verbatim}
@@ -209,7 +302,7 @@ print("Number of occurrences of", word_to_count, "in the tuple:", occurrences)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -227,19 +320,20 @@ print("Number of occurrences of", word_to_count, "in the tuple:", occurrences)
             indexes.append(i)
     return indexes
 
-# Example tuple of strings
-tuple_of_strings = ("apple banana", "banana orange", "banana apple", "orange mango banana")
+	# Example tuple of strings
+	tuple_of_strings = ("apple banana", "banana orange",
+				 "banana apple", "orange mango banana")
 
-# Word to get the index of
-word_to_find = input("Enter the word to find its index: ")
+	# Word to get the index of
+	word_to_find = input("Enter the word to find its index: ")
 
-# Get the index of the word in the tuple
-word_indexes = get_word_index(word_to_find, tuple_of_strings)
+	# Get the index of the word in the tuple
+	word_indexes = get_word_index(word_to_find, tuple_of_strings)
 
-if word_indexes:
-    print("Indexes of", word_to_find, "in the tuple:", word_indexes)
-else:
-    print(word_to_find, "not found in the tuple.")
+	if word_indexes:
+		print("Indexes of", word_to_find, "in the tuple:", word_indexes)
+	else:
+		print(word_to_find, "not found in the tuple.")
 
 \end{lstlisting}
 
@@ -255,7 +349,7 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -266,26 +360,26 @@ else:
 	print("0827CI211155")
 
 	
-# Function to print individual student's details
-def print_student_details(roll_no, name, cgpa, sgpa):
-    print("Roll No:", roll_no)
-    print("Name:", name)
-    print("CGPA:", cgpa)
-    print("SGPA:", sgpa)
-    print()
+	# Function to print individual student's details
+	def print_student_details(roll_no, name, cgpa, sgpa):
+		print("Roll No:", roll_no)
+		print("Name:", name)
+		print("CGPA:", cgpa)
+		print("SGPA:", sgpa)
+		print()
 
-# Create tuples for student details
-roll_numbers = (101, 102, 103, 104)
-names = ("John Doe", "Jane Smith", "Alice Johnson", "Bob Brown")
-cgpa = (3.8, 3.9, 3.7, 4.0)
-sgpa = (4.0, 3.9, 3.8, 4.0)
+	# Create tuples for student details
+	roll_numbers = (101, 102, 103, 104)
+	names = ("John Doe", "Jane Smith", "Alice Johnson", "Bob Brown")
+	cgpa = (3.8, 3.9, 3.7, 4.0)
+	sgpa = (4.0, 3.9, 3.8, 4.0)
 
-# Print individual student's details
-for i in range(len(roll_numbers)):
-    print("Student", i+1, "details:")
-    print_student_details(roll_numbers[i], names[i], cgpa[i], sgpa[i])
-print("Ritesh Telkar")
-print("0827CI211158")
+	# Print individual student's details
+	for i in range(len(roll_numbers)):
+		print("Student", i+1, "details:")
+		print_student_details(roll_numbers[i], names[i], cgpa[i], sgpa[i])
+	print("Ritesh Telkar")
+	print("0827CI211158")
 \end{lstlisting}
 
 \begin{verbatim}
@@ -320,7 +414,7 @@ print("0827CI211158")
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 
 \newpage
 
@@ -347,7 +441,7 @@ print("0827CI211158")
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -381,7 +475,7 @@ print("0827CI211158")
 	
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -419,11 +513,11 @@ print("0827CI211158")
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
-\qs{}{# Write a Python program to remove Item(s) from a given set.}
+\qs{}{Write a Python program to remove Item(s) from a given set.}
 \sol 
 \begin{lstlisting}[language=Python]
 	print("Rishabh Rathore")
@@ -455,7 +549,7 @@ print("0827CI211158")
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -472,18 +566,18 @@ print("0827CI211158")
     else:
         print(f"Item '{item}' is not present in the set")
 
-# Define a set
-my_set = {1, 2, 3, 4, 5}
+	# Define a set
+	my_set = {1, 2, 3, 4, 5}
 
-# Print the initial set
-print("Initial set:", my_set)
+	# Print the initial set
+	print("Initial set:", my_set)
 
-# Remove an item from the set
-item_to_remove = int(input("Enter the item to remove: "))
-remove_item(my_set, item_to_remove)
+	# Remove an item from the set
+	item_to_remove = int(input("Enter the item to remove: "))
+	remove_item(my_set, item_to_remove)
 
-# Print the set after removal
-print("Set after removal:", my_set)
+	# Print the set after removal
+	print("Set after removal:", my_set)
 \end{lstlisting}
 
 \begin{verbatim}
@@ -500,7 +594,7 @@ print("Set after removal:", my_set)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -530,7 +624,7 @@ print("Set after removal:", my_set)
 	
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -560,7 +654,7 @@ print("Set after removal:", my_set)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -590,7 +684,7 @@ print("Set after removal:", my_set)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -619,7 +713,7 @@ print("Set after removal:", my_set)
 	Symmetric difference of set1 and set2: {1, 2, 3, 6, 7, 8}
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -652,7 +746,7 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -665,12 +759,12 @@ else:
 	def remove_all_elements(some_set):
     some_set.clear()  # Clears all elements from the set
 
-# Example usage:
-my_set = {1, 2, 3, 4, 5}
-print("Before removing elements:", my_set)
+	# Example usage:
+	my_set = {1, 2, 3, 4, 5}
+	print("Before removing elements:", my_set)
 
-remove_all_elements(my_set)
-print("After removing elements:", my_set)
+	remove_all_elements(my_set)
+	print("After removing elements:", my_set)
 \end{lstlisting}
 
 \begin{verbatim}
@@ -683,7 +777,7 @@ print("After removing elements:", my_set)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -701,14 +795,14 @@ print("After removing elements:", my_set)
         min_value = min(some_set)
         return max_value, min_value
 
-# Example usage:
-my_set = {5, 3, 9, 2, 8, 1}
+	# Example usage:
+	my_set = {5, 3, 9, 2, 8, 1}
 
-result = find_max_min(my_set)
-if result:
-    max_val, min_val = result
-    print("Maximum value:", max_val)
-    print("Minimum value:", min_val)
+	result = find_max_min(my_set)
+	if result:
+		max_val, min_val = result
+		print("Maximum value:", max_val)
+		print("Minimum value:", min_val)
 \end{lstlisting}
 
 \begin{verbatim}
@@ -721,7 +815,7 @@ if result:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -734,10 +828,10 @@ if result:
 	def find_set_length(some_set):
     return len(some_set)
 
-# Example usage:
-my_set = {1, 2, 3, 4, 5}
-set_length = find_set_length(my_set)
-print("Length of the set:", set_length)
+	# Example usage:
+	my_set = {1, 2, 3, 4, 5}
+	set_length = find_set_length(my_set)
+	print("Length of the set:", set_length)
 \end{lstlisting}
 
 \begin{verbatim}
@@ -749,7 +843,7 @@ print("Length of the set:", set_length)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -762,14 +856,14 @@ print("Length of the set:", set_length)
 	def check_value_in_set(some_set, value):
     return value in some_set
 
-# Example usage:
-my_set = {1, 2, 3, 4, 5}
-value_to_check = 3
+	# Example usage:
+	my_set = {1, 2, 3, 4, 5}
+	value_to_check = 3
 
-if check_value_in_set(my_set, value_to_check):
-    print("The value", value_to_check, "is present in the set.")
-else:
-    print("The value", value_to_check, "is not present in the set.")
+	if check_value_in_set(my_set, value_to_check):
+		print("The value", value_to_check, "is present in the set.")
+	else:
+		print("The value", value_to_check, "is not present in the set.")
 \end{lstlisting}
 
 \begin{verbatim}
@@ -781,7 +875,7 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -794,14 +888,14 @@ else:
 	def no_common_elements(set1, set2):
     return set1.isdisjoint(set2)
 
-# Example usage:
-set1 = {1, 2, 3}
-set2 = {4, 5, 6}
+	# Example usage:
+	set1 = {1, 2, 3}
+	set2 = {4, 5, 6}
 
-if no_common_elements(set1, set2):
-    print("The sets have no common elements.")
-else:
-    print("The sets have common elements.")
+	if no_common_elements(set1, set2):
+		print("The sets have no common elements.")
+	else:
+		print("The sets have common elements.")
 
 \end{lstlisting}
 
@@ -815,11 +909,11 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
-\qs{}{# Write a Python program to create a Dictionary of student information. take roll no as key}
+\qs{}{ Write a Python program to create a Dictionary of student information. take roll no as key}
 \sol 
 \begin{lstlisting}[language=Python]
 	print("Rishabh Rathore")
@@ -837,19 +931,19 @@ else:
 
     return student_dict
 
-def main():
-    student_info = create_student_dictionary()
-    print("\nStudent Information:")
-    for roll_no, info in student_info.items():
-        print("for student ")
-        print(f"Roll No: {roll_no}")
-        print(f"Name: {info['Name']}")
-        print(f"Age: {info['Age']}")
-        print(f"Grade: {info['Grade']}")
-        print()
+	def main():
+		student_info = create_student_dictionary()
+		print("\nStudent Information:")
+		for roll_no, info in student_info.items():
+			print("for student ")
+			print(f"Roll No: {roll_no}")
+			print(f"Name: {info['Name']}")
+			print(f"Age: {info['Age']}")
+			print(f"Grade: {info['Grade']}")
+			print()
 
-if __name__ == "__main__":
-    main()
+	if __name__ == "__main__":
+		main()
   
 
 \end{lstlisting}
@@ -892,7 +986,7 @@ if __name__ == "__main__":
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -909,25 +1003,25 @@ if __name__ == "__main__":
     else:
         print(f"Key '{roll_no}' not found in the dictionary.")
 
-def main():
-    # Example student dictionary
-    student_dict = {
-        "001": {"Name": "Alice", "Age": 18, "Grade": "A"},
-        "002": {"Name": "Bob", "Age": 19, "Grade": "B"},
-        "003": {"Name": "Charlie", "Age": 20, "Grade": "C"}
-    }
+	def main():
+		# Example student dictionary
+		student_dict = {
+			"001": {"Name": "Alice", "Age": 18, "Grade": "A"},
+			"002": {"Name": "Bob", "Age": 19, "Grade": "B"},
+			"003": {"Name": "Charlie", "Age": 20, "Grade": "C"}
+		}
 
-    print("Original Dictionary:")
-    print(student_dict)
+		print("Original Dictionary:")
+		print(student_dict)
 
-    roll_no_to_delete = input("\nEnter the roll number to delete: ")
-    delete_key_from_dict(student_dict, roll_no_to_delete)
+		roll_no_to_delete = input("\nEnter the roll number to delete: ")
+		delete_key_from_dict(student_dict, roll_no_to_delete)
 
-    print("\nUpdated Dictionary:")
-    print(student_dict)
+		print("\nUpdated Dictionary:")
+		print(student_dict)
 
-if __name__ == "__main__":
-    main()
+	if __name__ == "__main__":
+		main()
 
 \end{lstlisting}
 
@@ -937,18 +1031,21 @@ if __name__ == "__main__":
 	Rishabh Rathore
 	0827CI211155
 	Original Dictionary:
-	{'001': {'Name': 'Alice', 'Age': 18, 'Grade': 'A'}, '002': {'Name': 'Bob', 'Age': 19, 'Grade': 'B'}, '003': {'Name': 'Charlie', 'Age': 20, 'Grade': 'C'}}
+	{'001': {'Name': 'Alice', 'Age': 18, 'Grade': 'A'}, 
+	 '002': {'Name': 'Bob', 'Age': 19, 'Grade': 'B'},
+	 '003': {'Name': 'Charlie', 'Age': 20, 'Grade': 'C'}}
 
 	Enter the roll number to delete: 003
 	Key '003' deleted successfully.
 
 	Updated Dictionary:
-	{'001': {'Name': 'Alice', 'Age': 18, 'Grade': 'A'}, '002': {'Name': 'Bob', 'Age': 19, 'Grade': 'B'}}
+	{'001': {'Name': 'Alice', 'Age': 18, 'Grade': 'A'}, 
+	'002': {'Name': 'Bob', 'Age': 19, 'Grade': 'B'}}
 	
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -973,17 +1070,17 @@ if __name__ == "__main__":
     dictionary[key] = value
 
 
-my_dictionary = {'a': 1, 'b': 2, 'c': 3}
+	my_dictionary = {'a': 1, 'b': 2, 'c': 3}
 
-print("Original Dictionary:", my_dictionary)
-
-
-add_or_update_data(my_dictionary, 'd', 4)
-print("Dictionary after adding 'd':", my_dictionary)
+	print("Original Dictionary:", my_dictionary)
 
 
-add_or_update_data(my_dictionary, 'b', 5)
-print("Dictionary after updating 'b':", my_dictionary)
+	add_or_update_data(my_dictionary, 'd', 4)
+	print("Dictionary after adding 'd':", my_dictionary)
+
+
+	add_or_update_data(my_dictionary, 'b', 5)
+	print("Dictionary after updating 'b':", my_dictionary)
 
   
 
@@ -1002,7 +1099,7 @@ print("Dictionary after updating 'b':", my_dictionary)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1026,15 +1123,15 @@ print("Dictionary after updating 'b':", my_dictionary)
         concatenated_dict.update(d)
     return concatenated_dict
 
-# Sample dictionaries
-dic1 = {1: 10, 2: 20}
-dic2 = {3: 30, 4: 40}
+	# Sample dictionaries
+	dic1 = {1: 10, 2: 20}
+	dic2 = {3: 30, 4: 40}
 
-# Concatenate dictionaries
-concatenated_dict = concatenate_dicts(dic1, dic2)
+	# Concatenate dictionaries
+	concatenated_dict = concatenate_dicts(dic1, dic2)
 
-# Output the concatenated dictionary
-print("Concatenated Dictionary:", concatenated_dict)
+	# Output the concatenated dictionary
+	print("Concatenated Dictionary:", concatenated_dict)
 
 
 \end{lstlisting}
@@ -1050,7 +1147,7 @@ print("Concatenated Dictionary:", concatenated_dict)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1072,17 +1169,17 @@ print("Concatenated Dictionary:", concatenated_dict)
     """
     return key in dictionary
 
-# Sample dictionary
-my_dict = {'a': 1, 'b': 2, 'c': 3}
+	# Sample dictionary
+	my_dict = {'a': 1, 'b': 2, 'c': 3}
 
-# Key to check
-key_to_check = 'b'
+	# Key to check
+	key_to_check = 'b'
 
-# Check if the key exists in the dictionary
-if check_key_existence(my_dict, key_to_check):
-    print(f"The key '{key_to_check}' exists in the dictionary.")
-else:
-    print(f"The key '{key_to_check}' does not exist in the dictionary.")
+	# Check if the key exists in the dictionary
+	if check_key_existence(my_dict, key_to_check):
+		print(f"The key '{key_to_check}' exists in the dictionary.")
+	else:
+		print(f"The key '{key_to_check}' does not exist in the dictionary.")
 \end{lstlisting}
 
 \begin{verbatim}
@@ -1094,7 +1191,7 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 
 \newpage
 
@@ -1152,7 +1249,7 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1177,14 +1274,14 @@ else:
         squared_dict[x] = x * x
     return squared_dict
 
-# Sample value of n
-n = 8
+	# Sample value of n
+	n = 8
 
-# Generate the dictionary
-result_dict = generate_squared_dict(n)
+	# Generate the dictionary
+	result_dict = generate_squared_dict(n)
 
-# Print the generated dictionary
-print("Generated Dictionary:", result_dict)
+	# Print the generated dictionary
+	print("Generated Dictionary:", result_dict)
 
 \end{lstlisting}
 
@@ -1198,7 +1295,7 @@ print("Generated Dictionary:", result_dict)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1220,9 +1317,9 @@ print("Generated Dictionary:", result_dict)
     """
     return a + b
 
-# Example usage:
-result = sum_of_two_variables(5, 7)
-print("Sum of the two variables:", result)
+	# Example usage:
+	result = sum_of_two_variables(5, 7)
+	print("Sum of the two variables:", result)
   
 
 \end{lstlisting}
@@ -1237,7 +1334,7 @@ print("Sum of the two variables:", result)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1252,17 +1349,15 @@ print("Sum of the two variables:", result)
 
     Parameters:
     name: The name of the person to greet.
-    greeting (optional): The greeting to use. Defaults to "Hello" if not specified.
+    greeting \(optional\): The greeting to use. Defaults to "Hello" if not specified.
 
     Returns:
     str: The greeting message.
     """
     return f"{greeting}, {name}!"
 
-# Example usage:
-print(greet("Ram"))  # Uses the default greeting "Hello"
-print(greet("Siya", "Good morning"))  # Uses the specified greeting "Good morning"
-
+	# Example usage:
+	print(greet("Ram"))  # Uses the default greeting "Hello"
 
 \end{lstlisting}
 
@@ -1277,7 +1372,7 @@ print(greet("Siya", "Good morning"))  # Uses the specified greeting "Good mornin
 	
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1309,9 +1404,9 @@ print(greet("Siya", "Good morning"))  # Uses the specified greeting "Good mornin
         else:
             return c
 
-# Example usage:
-result = find_maximum(10, 5, 8)
-print("Maximum of the three numbers:", result)
+	# Example usage:
+	result = find_maximum(10, 5, 8)
+	print("Maximum of the three numbers:", result)
   
 
 \end{lstlisting}
@@ -1325,7 +1420,7 @@ print("Maximum of the three numbers:", result)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1347,9 +1442,9 @@ print("Maximum of the three numbers:", result)
     for arg in args:
         print(arg)
 
-# Example usage:
-print_arguments(1, 2, 3)
-print_arguments('Hello', 'world', '!')
+	# Example usage:
+	print_arguments(1, 2, 3)
+	print_arguments('Hello', 'world', '!')
   
 
 \end{lstlisting}
@@ -1369,7 +1464,7 @@ print_arguments('Hello', 'world', '!')
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1390,11 +1485,11 @@ print_arguments('Hello', 'world', '!')
     """
     return input_string[::-1]
 
-# Example usage:
-original_string = "hello"
-reversed_string = reverse_string(original_string)
-print("Original string:", original_string)
-print("Reversed string:", reversed_string)
+	# Example usage:
+	original_string = "hello"
+	reversed_string = reverse_string(original_string)
+	print("Original string:", original_string)
+	print("Reversed string:", reversed_string)
 
 \end{lstlisting}
 
@@ -1408,7 +1503,7 @@ print("Reversed string:", reversed_string)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1429,15 +1524,15 @@ print("Reversed string:", reversed_string)
     """
     print(func.__doc__)
 
-# Example usage:
-def example_function():
-    """
-    This is an example function.
-    It does nothing.
-    """
-    pass
+	# Example usage:
+	def example_function():
+		"""
+		This is an example function.
+		It does nothing.
+		"""
+		pass
 
-print_docstring(example_function)
+	print_docstring(example_function)
 
 \end{lstlisting}
 
@@ -1453,7 +1548,7 @@ print_docstring(example_function)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1498,7 +1593,7 @@ print_docstring(example_function)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1527,10 +1622,10 @@ print_docstring(example_function)
             result *= i
         return result
 
-# Example usage:
-number = 5
-print(f"The factorial of {number} is:", factorial(number))
-print("\n")
+	# Example usage:
+	number = 5
+	print(f"The factorial of {number} is:", factorial(number))
+	print("\n")
   
 
 \end{lstlisting}
@@ -1545,7 +1640,7 @@ print("\n")
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1568,15 +1663,15 @@ print("\n")
     """
     return start <= number <= end
 
-# Example usage:
-num = 7
-start_range = 5
-end_range = 10
+	# Example usage:
+	num = 7
+	start_range = 5
+	end_range = 10
 
-if check_range(num, start_range, end_range):
-    print(f"{num} falls within the range [{start_range}, {end_range}]")
-else:
-    print(f"{num} does not fall within the range [{start_range}, {end_range}]")
+	if check_range(num, start_range, end_range):
+		print(f"{num} falls within the range [{start_range}, {end_range}]")
+	else:
+		print(f"{num} does not fall within the range [{start_range}, {end_range}]")
   
 
 \end{lstlisting}
@@ -1591,7 +1686,7 @@ else:
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1619,11 +1714,11 @@ else:
             lower_count += 1
     return upper_count, lower_count
 
-# Example usage:
-input_string = "Hello World"
-upper, lower = count_upper_lower(input_string)
-print("Number of upper case letters:", upper)
-print("Number of lower case letters:", lower)
+	# Example usage:
+	input_string = "Hello World"
+	upper, lower = count_upper_lower(input_string)
+	print("Number of upper case letters:", upper)
+	print("Number of lower case letters:", lower)
 
 \end{lstlisting}
 
@@ -1639,7 +1734,7 @@ print("Number of lower case letters:", lower)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1681,7 +1776,7 @@ print("Distinct List:", distinct_list)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1714,13 +1809,13 @@ print("Distinct List:", distinct_list)
             i += 6
         return True
 
-# Example usage:
-num = 19
-if is_prime(num):
-    print(f"{num} is a prime number.")
-else:
-    print(f"{num} is not a prime number.")
-print("\n")
+	# Example usage:
+	num = 19
+	if is_prime(num):
+		print(f"{num} is a prime number.")
+	else:
+		print(f"{num} is not a prime number.")
+	print("\n")
 \end{lstlisting}
 
 \begin{verbatim}
@@ -1733,7 +1828,7 @@ print("\n")
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1746,19 +1841,19 @@ print("\n")
     """
     Outer function.
     """
-    print("This is the outer function.")
+		print("This is the outer function.")
 
-    def inner_function():
-        """
-        Inner function.
-        """
-        print("This is the inner function.")
+		def inner_function():
+			"""
+			Inner function.
+			"""
+			print("This is the inner function.")
 
     # Call the inner function
     inner_function()
 
-# Call the outer function
-outer_function()
+	# Call the outer function
+	outer_function()
   
 
 \end{lstlisting}
@@ -1775,7 +1870,7 @@ outer_function()
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1800,12 +1895,12 @@ outer_function()
     # Compare the string with its reverse
     return clean_string == clean_string[::-1]
 
-# Example usage:
-input_string = "A man a plan a canal Panama"
-if is_palindrome(input_string):
-    print(f"'{input_string}' is a palindrome.")
-else:
-    print(f"'{input_string}' is not a palindrome.")
+	# Example usage:
+	input_string = "A man a plan a canal Panama"
+	if is_palindrome(input_string):
+		print(f"'{input_string}' is a palindrome.")
+	else:
+		print(f"'{input_string}' is not a palindrome.")
   
 
 \end{lstlisting}
@@ -1819,7 +1914,7 @@ else:
 	
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1838,9 +1933,9 @@ else:
     squares = [x ** 2 for x in range(1, 31)]
     return squares
 
-# Example usage:
-squares = squares_list()
-print("List of squares of numbers between 1 and 30:", squares)
+	# Example usage:
+	squares = squares_list()
+	print("List of squares of numbers between 1 and 30:", squares)
   
 
 \end{lstlisting}
@@ -1850,12 +1945,14 @@ print("List of squares of numbers between 1 and 30:", squares)
 
 	Rishabh Rathore
 	0827CI211155
-	List of squares of numbers between 1 and 30: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900]
+	List of squares of numbers between 1 and 30: [1, 4, 9, 16, 25, 36, 49, 64, 81,
+	100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441,
+	484, 529, 576, 625, 676, 729, 784, 841, 900]
 	
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1877,9 +1974,9 @@ print("List of squares of numbers between 1 and 30:", squares)
     even_numbers = [num for num in input_list if num % 2 == 0]
     print("Even numbers from the given list:", even_numbers)
 
-# Example usage:
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print_even_numbers(numbers)
+	# Example usage:
+	numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	print_even_numbers(numbers)
   
 
 \end{lstlisting}
@@ -1894,7 +1991,7 @@ print_even_numbers(numbers)
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -1928,12 +2025,12 @@ print_even_numbers(numbers)
         print("Roll No:", self.roll_no)
         print("Semester:", self.semester)
 
-# Create an object of the Student class
-student1 = Student("Ramesh Kumar", "12345", "Spring 2024")
+	# Create an object of the Student class
+	student1 = Student("Ramesh Kumar", "12345", "Spring 2024")
 
-# Display the data using the object
-print("Student Data:")
-student1.display_data()
+	# Display the data using the object
+	print("Student Data:")
+	student1.display_data()
 
 \end{lstlisting}
 
@@ -1950,12 +2047,14 @@ student1.display_data()
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
+
 \newpage
+% TODO solve the red line problem
+\qs{Write a program to demonstrate the use of _init_\(\) }
 
+\sol
 
-\qs{}{Write a program to demonstrate the use of _init_()}
-\sol 
 \begin{lstlisting}[language=Python]
 	print("Rishabh Rathore")
 	print("0827CI211155")
@@ -1990,14 +2089,14 @@ student1.display_data()
         """
         print(f"This car has {self.odometer_reading} miles on it.")
 
-# Create an object of the Car class
-my_car = Car("Toyota", "Corolla", 2022)
+	# Create an object of the Car class
+	my_car = Car("Toyota", "Corolla", 2022)
 
-# Display information about the car
-print("Car Information:", my_car.get_car_info())
+	# Display information about the car
+	print("Car Information:", my_car.get_car_info())
 
-# Read the odometer reading of the car
-my_car.read_odometer()
+	# Read the odometer reading of the car
+	my_car.read_odometer()
   
 
 \end{lstlisting}
@@ -2013,7 +2112,7 @@ my_car.read_odometer()
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -2148,7 +2247,7 @@ my_car.read_odometer()
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 
@@ -2162,20 +2261,20 @@ my_car.read_odometer()
     def show_message(self):
         print("This is the parent message.")
 
-class Child(Parent):
-    def show_message(self):
-        print("This is the overridden message.")
+	class Child(Parent):
+		def show_message(self):
+			print("This is the overridden message.")
 
-# Create objects of both Parent and Child classes
-parent_obj = Parent()
-child_obj = Child()
+	# Create objects of both Parent and Child classes
+	parent_obj = Parent()
+	child_obj = Child()
 
-# Call the method on each object
-print("Calling show_message() method of Parent class:")
-parent_obj.show_message()
+	# Call the method on each object
+	print("Calling show_message() method of Parent class:")
+	parent_obj.show_message()
 
-print("\nCalling show_message() method of Child class:")
-child_obj.show_message()
+	print("\nCalling show_message() method of Child class:")
+	child_obj.show_message()
 
 \end{lstlisting}
 
@@ -2192,7 +2291,7 @@ child_obj.show_message()
 
 \end{verbatim}
 
-\nt{To be or not to be}
+
 \newpage
 
 

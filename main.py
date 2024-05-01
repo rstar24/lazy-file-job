@@ -165,21 +165,24 @@ def compile_tex():
     
     zz = 0 # Erase me later
     for x in students_build_dirs_paths:
-        if (zz<2): # Uncomment this line for full compile
+        if (zz<1): # Uncomment this line for full compile
             t0 = os.path.join(x,'file')
             t1 = os.path.join(t0,'template.tex')
             t2 = os.path.join(x,'front-page')
             t3 = os.path.join(t2,'front-page.tex')
             temp = "pdflatex --include-directory={} --output-directory={} {}".format(t0,t0,t1)
             temp2 = "pdflatex --include-directory={} --output-directory={} {}".format(t2,t2,t3)
-            result_1 = subprocess.run(temp,stdout=subprocess.DEVNULL,shell=True,text=False)
+            # result_1 = subprocess.run(temp,stdout=subprocess.DEVNULL,shell=True,text=False)
+            result_1 = subprocess.run(temp,shell=True,text=False)
+
             if(result_1.returncode == 0):
                 print("Compiled File")
             else:
                 print("try again Rishabh")
             # result = subprocess.run(temp2)
             # subprocess.run(temp,shell=True)
-            result_2 = subprocess.run(temp2,stdout=subprocess.DEVNULL,shell=True,text=False)
+            # result_2 = subprocess.run(temp2,stdout=subprocess.DEVNULL,shell=True,text=False)
+            result_2 = subprocess.run(temp2,shell=True,text=False)
             if(result_2.returncode == 0):
                 print("Compiled Front ")
             else:
