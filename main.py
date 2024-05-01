@@ -64,6 +64,7 @@ build_dir_students = os.path.join(build_dir,'students')
 src_dir = os.path.join(proj_root_dir,'src')
 file_tex_template_path = os.path.join(src_dir,'file')
 front_tex_path = os.path.join(src_dir,'front-page')
+cert_tex_path = os.path.join(src_dir,'certificate')
 
 # Making directory for each student
 students = pd.read_csv('students.csv')
@@ -80,8 +81,10 @@ def create_folder_in_students():
     for x in students_build_dirs_paths:
         file = os.path.join(x,'file')
         front_page = os.path.join(x,'front-page')
+        cert_page = os.path.join(x,'certificate')
         os.mkdir(file)
         os.mkdir(front_page)
+        os.mkdir(cert_page)
         
     print('Empty Student Name Folders Created')
     print("made file and front page dir in students")
@@ -94,8 +97,10 @@ def copy_tex_dirs():
     for x in students_build_dirs_paths:
         file_path = os.path.join(x,'file')
         front_page_path = os.path.join(x,'front-page')
+        cert_page_path = os.path.join(x,'certificate')
         copy_directory_contents(file_tex_template_path,file_path)
         copy_directory_contents(front_tex_path,front_page_path)
+        copy_directory_contents(cert_tex_path,cert_page_path)
     print('file-tex and front-page-tex file copied')
         
 copy_tex_dirs()    
@@ -109,6 +114,7 @@ def change_it():
     my_enn = r'0827CI211155'
     file_paths = []
     front_paths = []
+    cert_cls_paths = []
     names = students['Student Name'].tolist()
     enn = students['Enrollment no'].tolist()
     
@@ -117,15 +123,20 @@ def change_it():
         t1 = os.path.join(t0,'template.tex')
         t2 = os.path.join(x,'front-page')
         t3 = os.path.join(t2,'front-page.tex')
+        t4 = os.path.join(x,'certificate')
+        t5 = os.path.join(t4,'iiitbhopal.cls')
+        
         # file_paths.append(os.path.join(x,'file\\template.tex'))
         # front_paths.append(os.path.join(x,'front-page\\front-page.tex'))
         file_paths.append(t1)
         front_paths.append(t3)
+        cert_cls_paths.append(t5)
     
-    # if(len(file_paths) == len(front_paths)):
-    #     print('file_paths len {}'.format(len(file_paths)))
-    #     print('front_paths len {}'.format(len(front_paths)))
-    #     print("works")
+    if(len(file_paths) == len(front_paths)):
+        print('file_paths len {}'.format(len(file_paths)))
+        print('front_paths len {}'.format(len(front_paths)))
+        print('cert_paths len {}'.format(len(cert_cls_paths)))
+        print("works")
     
     # Replace names and enn
     for i in range(len(names)):
@@ -133,7 +144,8 @@ def change_it():
         replace_text_in_file(file_paths[i],my_enn,enn[i])
         replace_text_in_file(front_paths[i],my_name,names[i])
         replace_text_in_file(front_paths[i],my_enn,enn[i])
-    
+        replace_text_in_file(cert_cls_paths[i],my_name,names[i])
+
     print('Replacement successful')        
 
 change_it()
@@ -141,6 +153,7 @@ change_it()
 def compile_tex():
     file_paths = []
     front_paths = []
+    cert_paths = []
     for x in students_build_dirs_paths:
         # t0 = os.path.join(x,'front-page')
         t1 = os.path.join(x,'file')
@@ -149,6 +162,8 @@ def compile_tex():
         t3 = os.path.join(x,'front-page')
         t4 = os.path.join(t3,'front-page.tex')
         front_paths.append(t4)
+        t5 = os.path.join(x,'certificate')
+        t6 = os.path.join(t5,'certificate.tex')
         # file_paths.append(os.path.join(x,'file\\template.tex'))
         # front_paths.append(os.path.join(x,'front-page\\front-page.tex'))
     
@@ -170,11 +185,14 @@ def compile_tex():
             t1 = os.path.join(t0,'template.tex')
             t2 = os.path.join(x,'front-page')
             t3 = os.path.join(t2,'front-page.tex')
+            t4 = os.path.join(x,'certificate')
+            t5 = os.path.join(t4,'certificate.tex')
             temp = "pdflatex --include-directory={} --output-directory={} {}".format(t0,t0,t1)
             temp2 = "pdflatex --include-directory={} --output-directory={} {}".format(t2,t2,t3)
+            temp3 = "pdflatex --include-directory={} --output-directory={} {}".format(t4,t4,t5)
             # result_1 = subprocess.run(temp,stdout=subprocess.DEVNULL,shell=True,text=False)
             result_1 = subprocess.run(temp,shell=True,text=False)
-
+            
             if(result_1.returncode == 0):
                 print("Compiled File")
             else:
@@ -187,6 +205,14 @@ def compile_tex():
                 print("Compiled Front ")
             else:
                 print("try again Rishabh")
+            # result_3 = subprocess.run(temp3,stdout=subprocess.DEVNULL,shell=True,text=False)
+            result_3 = subprocess.run(temp3,shell=True,text=False)
+            if(result_3.returncode == 0):
+                print("Certificate Compiled ")
+            else:
+                print("Certificate not compiled try again Rishabh")
+                
+            
         zz = zz+1 # Please erase it later
         
     # for i in range(len(front_paths)):
@@ -206,6 +232,8 @@ compile_tex()
 def merge_output():
     file_paths = []
     front_paths = []
+    cert_paths = []
+    
     for x in students_build_dirs_paths:
         # t0 = os.path.join(x,'front-page')
         t1 = os.path.join(x,'file')
@@ -214,6 +242,10 @@ def merge_output():
         t3 = os.path.join(x,'front-page')
         t4 = os.path.join(t3,'front-page.pdf')
         front_paths.append(t4)
+        t5 = os.path.join(x,'certificate')
+        t6 = os.path.join(t5,'certificate.pdf')
+        cert_paths.append(t6)
+        
     output_paths = []
     
     names = students['Student_Name'].to_list()
@@ -225,20 +257,21 @@ def merge_output():
         output_paths.append(temp)
     
     
-    for x in students_build_dirs_paths:
-        # t0 = os.path.join(x,'front-page')
-        t1 = os.path.join(x,'file')
-        t2 = os.path.join(t1,'template.tex')
-        file_paths.append(t2)
-        t3 = os.path.join(x,'front-page')
-        t4 = os.path.join(t3,'front-page.tex')
-        front_paths.append(t4)
+    # for x in students_build_dirs_paths:
+    #     # t0 = os.path.join(x,'front-page')
+    #     t1 = os.path.join(x,'file')
+    #     t2 = os.path.join(t1,'template.tex')
+    #     file_paths.append(t2)
+    #     t3 = os.path.join(x,'front-page')
+    #     t4 = os.path.join(t3,'front-page.tex')
+    #     front_paths.append(t4)
     
     zz = 0
     for i in range(len(file_paths)):
         if (zz < 2):
             merger = PdfWriter()
             merger.append(front_paths[i])
+            merger.append(cert_paths[i])
             merger.append(file_paths[i])
             merger.write(output_paths[i])
             merger.close()

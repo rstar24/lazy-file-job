@@ -466,32 +466,33 @@
 \vspace{1.5\baselineskip} 
 
 This is to certify that the experimental work entered in this journal as per the
-BTech III year syllabus prescribed by the RGPV was done by Rishabh Rajpurohit 
+BTech III year syllabus prescribed by the RGPV was done by Rishabh Rathore 
 in VI semester in the Laboratory of this institute during the academic
 year 2023- 2024
 
-\vspace{1\baselineskip} 
-{\begin{tabular}{ll}
-              \@firstauthor &
-			   \@firstrollnumber\\
-			\if@secondauthor
-	           \@secondauthor &
-			   \@secondrollnumber\\			
-			\fi
-			\if@thirdauthor
-			   \@thirdauthor &
-			   \@thirdrollnumber\\
-			\fi
-			\if@forthauthor
-			   \@forthauthor &
-		       \@forthrollnumber\\
-			\fi
-           \end{tabular} \par}
-\vspace{1\baselineskip} 
+% \vspace{1\baselineskip} 
+% {\begin{tabular}{ll}
+%               \@firstauthor &
+% 			   \@firstrollnumber\\
+% 			\if@secondauthor
+% 	           \@secondauthor &
+% 			   \@secondrollnumber\\			
+% 			\fi
+% 			\if@thirdauthor
+% 			   \@thirdauthor &
+% 			   \@thirdrollnumber\\
+% 			\fi
+% 			\if@forthauthor
+% 			   \@forthauthor &
+% 		       \@forthrollnumber\\
+% 			\fi
+%            \end{tabular} \par}
+% \vspace{1\baselineskip} 
 \noindent
 \GuideSign 	
 \vspace{3\baselineskip} 
 
+\vspace*{5cm}
 
 \vspace{2\baselineskip} 
 {\addtolength{\tabcolsep}{40pt}

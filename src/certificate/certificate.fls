@@ -182,6 +182,12 @@ INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\grfext\grfext.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT .\certificate.out
+INPUT .\certificate.out
+INPUT certificate.out
+INPUT certificate.out
+INPUT .\certificate.out
+INPUT .\certificate.out
 OUTPUT certificate.out
 OUTPUT certificate.pdf
 INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\txfonts\t1xr.tfm

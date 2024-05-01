@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.23)  1 MAY 2024 22:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.23)  1 MAY 2024 23:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -523,6 +523,7 @@ Package caption Info: End \AtBeginDocument code.
 Package tocbasic Info: omitting babel extension for `lol'
 (tocbasic)             because of missing \bbl@set@language on input line 26.
 Package hyperref Info: Link coloring OFF on input line 26.
+ (certificate.out) (certificate.out)
 \@outlinefile=\write4
 \openout4 = `certificate.out'.
 
@@ -549,30 +550,7 @@ File: utxmia.fd 2000/12/15 v3.1
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 68.
  (C:\Users\risha\AppData\Roaming\MiKTeX\tex/latex/txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
-e:/python_file_creation_automation/src/certificate/certificate.tex:68: Undefined control sequence.
-\\makecertificate ... {tabular}{ll} \@firstauthor 
-                                                  & \@firstrollnumber \\ \if...
-l.68 \makecertificate[Certificate]{project report}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-e:/python_file_creation_automation/src/certificate/certificate.tex:68: Undefined control sequence.
-\\makecertificate ...stauthor & \@firstrollnumber 
-                                                  \\ \if@secondauthor \@seco...
-l.68 \makecertificate[Certificate]{project report}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[1
+) [1
 
 
 {C:/Users/risha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (certificate.aux)
@@ -580,26 +558,19 @@ and I'll forget about whatever was undefined.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-
-
-Package rerunfilecheck Warning: File `certificate.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `certificate.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `certificate.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15649 strings out of 474424
- 242431 string characters out of 5751554
+ 15654 strings out of 474424
+ 242621 string characters out of 5751554
  1929496 words of memory out of 5000000
- 37778 multiletter control sequences out of 15000+600000
+ 37779 multiletter control sequences out of 15000+600000
  581446 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,7n,121p,553b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/risha/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/rtxb.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on certificate.pdf (1 page, 33228 bytes).
+Output written on certificate.pdf (1 page, 33226 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
