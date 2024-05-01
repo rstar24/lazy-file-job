@@ -22,89 +22,36 @@
 \setcounter{chapter}{1}
 \setcounter{section}{0}
 \section{Python}
-\qs{}{Explain the difference between the list, tuple , set and dictionary ?}
+\qs{}{Write a program to Counts the number of occurrences of item 50 from a tuple.}
 \sol 
 \begin{lstlisting}[language=Python]
-	print("Rishabh Rathore")
-	print("0827CI211155")
+	print("Ritesh Telkar")
+	print("0827CI211158")
 
-	# List
-	my_list = [1, 2, 3, 4, 5]
+	def count_occurrences(tuple, item):
+    count = 0
+    for element in tuple:
+        if element == item:
+            count += 1
+    return count
 
-	print(my_list)
-	# Lists maintain order
-	for item in my_list:
-    	print(item)
+# Example tuple
+example_tuple = (10, 20, 30, 40, 50, 50, 50, 60, 70)
 
-	# Tuple
-	my_tuple = (1, 2, 3, 4, 5)
-
-	# Tuples are immutable - attempting to modify will raise an error
-
-	for item in my_tuple:
-    	print(item)
-
-	# Set
-	my_set = {1, 2, 3, 4, 5}
-
-	# Sets are mutable
-	my_set.add(6)
-	print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
-
-	# Sets do not maintain order
-	for item in my_set:
- 	   print(item)
-
-	# Dictionary
-	my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
-
-	# Dictionaries are mutable
-	my_dict['age'] = 35
-	print(my_dict)  # Output: {'name': 'John', 'age': 35, 'city': 'New York'}
-
-	# Dictionaries do not maintain order (prior to Python 3.7)
-	for key, value in my_dict.items():
-    	print(key, ':', value)
-
+# Count occurrences of item 50
+occurrences = count_occurrences(example_tuple, 50)
+print("Number of occurrences of item 50:", occurrences)
 
 \end{lstlisting}
 
 \begin{verbatim}
 	Output:
 
-	Rishabh Rathore
-	0827CI211155
+	Ritesh Telkar
+	0827CI211158
 
 
-	[10, 2, 3, 4, 5]
-
-	10
-	2
-	3
-	4
-	5
-
-	1
-	2
-	3
-	4
-	5
-
-	{1,2,3,4,5,6}
-
-	1
-	2
-	3
-	4
-	5
-	6
-
-	{'name': 'John', 'age': 35, 'city': 'New York'}
-
-	name : John
-	age : 35
-	city : New York
-
+	Number of occurrences of item 50: 3
 \end{verbatim}
 
 \nt{To be or not to be}
