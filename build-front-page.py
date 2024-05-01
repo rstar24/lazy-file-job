@@ -5,8 +5,12 @@ import numpy as np
 import shutil
 import subprocess
 
-students = pd.read_csv("/mnt/e/python_file_creation_automation/students.csv")
-build_dir = '/mnt/e/python_file_creation_automation/build/'
+students_csv_path = os.path.abspath('students.csv')
+students = pd.read_csv(students_csv_path)
+
+build_dir = os.path.dirname(students_csv_path)
+# students = pd.read_csv("/mnt/e/python_file_creation_automation/students.csv")
+# build_dir = '/mnt/e/python_file_creation_automation/build/'
 front_page_dir = '/mnt/e/python_file_creation_automation/src/front-page'
 
 

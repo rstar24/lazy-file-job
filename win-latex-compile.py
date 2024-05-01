@@ -8,13 +8,11 @@ import subprocess
 students_csv_path = os.path.abspath('students.csv')
 
 students = pd.read_csv(students_csv_path)
-build_dir = 
-front_mklatex_base_dir = 'E:\\python_file_creation_automation\\build\\'
+build_dir = os.path.dirname(students_csv_path)
+front_mklatex_base_dir = os.path.join(build_dir,'build')
 
 
 students['Student_Name'] = students['Student Name'].str.replace(' ','_')
-
-
 front_page_latex_files = []
 
 for x in students['Student_Name']:
