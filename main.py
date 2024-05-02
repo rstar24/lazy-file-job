@@ -178,9 +178,9 @@ def compile_tex():
     
     # for i in range(len(students_build_dirs_paths)):
     
-    zz = 0 # Erase me later
+    # zz = 0 # Erase me later
     for x in students_build_dirs_paths:
-        if (zz<1): # Uncomment this line for full compile
+        # if (zz<1): # Uncomment this line for full compile
             t0 = os.path.join(x,'file')
             t1 = os.path.join(t0,'template.tex')
             t2 = os.path.join(x,'front-page')
@@ -190,8 +190,8 @@ def compile_tex():
             temp = "pdflatex --include-directory={} --output-directory={} {}".format(t0,t0,t1)
             temp2 = "pdflatex --include-directory={} --output-directory={} {}".format(t2,t2,t3)
             temp3 = "pdflatex --include-directory={} --output-directory={} {}".format(t4,t4,t5)
-            # result_1 = subprocess.run(temp,stdout=subprocess.DEVNULL,shell=True,text=False)
-            result_1 = subprocess.run(temp,shell=True,text=False)
+            result_1 = subprocess.run(temp,stdout=subprocess.DEVNULL,shell=True,text=False)
+            # result_1 = subprocess.run(temp,shell=True,text=False)
             
             if(result_1.returncode == 0):
                 print("Compiled File")
@@ -199,21 +199,21 @@ def compile_tex():
                 print("try again Rishabh")
             # result = subprocess.run(temp2)
             # subprocess.run(temp,shell=True)
-            # result_2 = subprocess.run(temp2,stdout=subprocess.DEVNULL,shell=True,text=False)
-            result_2 = subprocess.run(temp2,shell=True,text=False)
+            result_2 = subprocess.run(temp2,stdout=subprocess.DEVNULL,shell=True,text=False)
+            # result_2 = subprocess.run(temp2,shell=True,text=False)
             if(result_2.returncode == 0):
                 print("Compiled Front ")
             else:
                 print("try again Rishabh")
-            # result_3 = subprocess.run(temp3,stdout=subprocess.DEVNULL,shell=True,text=False)
-            result_3 = subprocess.run(temp3,shell=True,text=False)
+            result_3 = subprocess.run(temp3,stdout=subprocess.DEVNULL,shell=True,text=False)
+            # result_3 = subprocess.run(temp3,shell=True,text=False)
             if(result_3.returncode == 0):
                 print("Certificate Compiled ")
             else:
                 print("Certificate not compiled try again Rishabh")
                 
             
-        zz = zz+1 # Please erase it later
+        # zz = zz+1 # Please erase it later
         
     # for i in range(len(front_paths)):
     #     temp = "pdflatex -output-directory={} {}".fromat(os.path.curdir(file_paths[i]),file_paths[i])
@@ -266,17 +266,17 @@ def merge_output():
     #     t4 = os.path.join(t3,'front-page.tex')
     #     front_paths.append(t4)
     
-    zz = 0
+    # zz = 0
     for i in range(len(file_paths)):
-        if (zz < 2):
+        # if (zz < 2):
             merger = PdfWriter()
             merger.append(front_paths[i])
             merger.append(cert_paths[i])
             merger.append(file_paths[i])
             merger.write(output_paths[i])
             merger.close()
-            print("Final Pdf Created")
-        zz = zz + 1
+            print("Final Pdf Created {}".format(i))
+        # zz = zz + 1
     
 merge_output()
 
