@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1714451330.09381 "e:/python_file_creation_automation/src/front-page/front-page.tex" "front-page.pdf" "front-page" 1714451331.30556 0
+["pdflatex"] 1714736887.78015 "e:/python_file_creation_automation/src/front-page/front-page.tex" "front-page.pdf" "front-page" 1714736888.77961 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb" 1136833548 44729 fea0975e20ec51c992338362f05f1146 ""
@@ -35,7 +35,7 @@
   "C:/Program Files/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1710412547 29918 d08e4795c0778dfb000e82d9225c6ce2 ""
   "C:/Program Files/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Program Files/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "C:/Users/risha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1714409569 160690 223465b9fece6b0a31877e7a82db774d ""
+  "C:/Users/risha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1714583850 160690 223465b9fece6b0a31877e7a82db774d ""
   "C:/Users/risha/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1713853740 24226191 fe0d1fed476867ecc0c70f7e5ec61fc7 ""
   "C:/Users/risha/AppData/Roaming/MiKTeX/fonts/tfm/public/txfonts/rtxb.tfm" 977342760 1020 c53143d3e3747b5c1149bd9a5ecd7b55 ""
   "C:/Users/risha/AppData/Roaming/MiKTeX/fonts/tfm/public/txfonts/rtxptmb.tfm" 977342760 4572 2c370d27bbb031f7592de9d41dc8cfca ""
@@ -69,10 +69,10 @@
   "C:/Users/risha/AppData/Roaming/MiKTeX/tex/latex/txfonts/ot1txr.fd" 977342760 1271 4e3afbd8e832f2f9c7f064894e6e68e4 ""
   "C:/Users/risha/AppData/Roaming/MiKTeX/tex/latex/txfonts/txfonts.sty" 1201100260 50381 d367461010070c7a491b1f6979ab2062 ""
   "C:/Users/risha/AppData/Roaming/MiKTeX/tex/latex/txfonts/utxexa.fd" 977342760 310 1b00b0b05685b816e4c6caccce437e0d ""
-  "e:/python_file_creation_automation/src/front-page/front-page.tex" 1714451329 2105 6db98b622fb69f497e7ea72426dad33d ""
-  "front-page.aux" 1714451331 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
-  "front-page.out" 1714451330 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "front-page.tex" 1714451329 2105 6db98b622fb69f497e7ea72426dad33d ""
+  "e:/python_file_creation_automation/src/front-page/front-page.tex" 1714736887 2583 4d241530500cf8c828aa32ca26699fb8 ""
+  "front-page.aux" 1714736888 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
+  "front-page.out" 1714736888 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "front-page.tex" 1714736887 2583 4d241530500cf8c828aa32ca26699fb8 ""
   "logo-3.png" 1714404987 561209 06cc2e66ffe59a34d18d89858d5aec7d ""
   (generated)
   "front-page.aux"

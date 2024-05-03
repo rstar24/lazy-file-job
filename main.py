@@ -65,6 +65,7 @@ src_dir = os.path.join(proj_root_dir,'src')
 file_tex_template_path = os.path.join(src_dir,'file')
 front_tex_path = os.path.join(src_dir,'front-page')
 cert_tex_path = os.path.join(src_dir,'certificate')
+index_page_path = os.path.join(src_dir,'index-page.pdf')
 
 # Making directory for each student
 students = pd.read_csv('students.csv')
@@ -178,9 +179,9 @@ def compile_tex():
     
     # for i in range(len(students_build_dirs_paths)):
     
-    # zz = 0 # Erase me later
+    zz = 0 # Erase me later
     for x in students_build_dirs_paths:
-        # if (zz<1): # Uncomment this line for full compile
+        if (zz<1): # Uncomment this line for full compile
             t0 = os.path.join(x,'file')
             t1 = os.path.join(t0,'template.tex')
             t2 = os.path.join(x,'front-page')
@@ -213,7 +214,7 @@ def compile_tex():
                 print("Certificate not compiled try again Rishabh")
                 
             
-        # zz = zz+1 # Please erase it later
+        zz = zz+1 # Please erase it later
         
     # for i in range(len(front_paths)):
     #     temp = "pdflatex -output-directory={} {}".fromat(os.path.curdir(file_paths[i]),file_paths[i])
@@ -266,17 +267,18 @@ def merge_output():
     #     t4 = os.path.join(t3,'front-page.tex')
     #     front_paths.append(t4)
     
-    # zz = 0
+    zz = 0
     for i in range(len(file_paths)):
-        # if (zz < 2):
+        if (zz < 2):
             merger = PdfWriter()
             merger.append(front_paths[i])
             merger.append(cert_paths[i])
+            merger.append(index_page_path)
             merger.append(file_paths[i])
             merger.write(output_paths[i])
             merger.close()
             print("Final Pdf Created {}".format(i))
-        # zz = zz + 1
+        zz = zz + 1
     
 merge_output()
 
