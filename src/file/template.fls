@@ -431,48 +431,9 @@ INPUT C:\Program Files\MiKTeX\tex\latex\base\omscmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\base\omscmr.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT C:\Users\risha\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxmia.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxmia.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxmia.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxsym.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxsym.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxsym.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxsyc.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxsyc.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\tex\latex\newpx\unpxsyc.fd
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
-INPUT C:\Users\risha\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\base\omlcmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\omlcmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\omlcmr.fd
 INPUT template.aux
 INPUT C:\Users\risha\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\risha\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
@@ -482,6 +443,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb

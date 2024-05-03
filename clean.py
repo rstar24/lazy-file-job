@@ -3,8 +3,8 @@
 # build dir 
 import os 
 import shutil
-import pandas as pd
-import numpy as np
+# import pandas as pd
+# import numpy as np
 
 def delete_folder_contents(folder_path):
     for filename in os.listdir(folder_path):
