@@ -7,23 +7,23 @@
     "README.md"
   ],
   "imageSize": 100,
-  "commit": true,
-  "commitConvention": "angular",
+  "commit": false,
+  "commitConvention": "none",
   "contributors": [
-    {
-      "login": "shrixx18",
-      "name": "Shriverdhan Pathak",
-      "avatar_url": "https://avatars.githubusercontent.com/u/118191820?v=4",
-      "profile": "https://github.com/shrixx18",
-      "contributions": [
-        "code"
-      ]
-    },
     {
       "login": "riteshTelkar28",
       "name": "riteshTelkar28",
       "avatar_url": "https://avatars.githubusercontent.com/u/161328930?v=4",
       "profile": "https://github.com/riteshTelkar28",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "shrixx18",
+      "name": "Shriverdhan Pathak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118191820?v=4",
+      "profile": "https://github.com/shrixx18",
       "contributions": [
         "code"
       ]
