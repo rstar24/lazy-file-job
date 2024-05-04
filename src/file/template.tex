@@ -23,6 +23,1016 @@
 \setcounter{section}{0}
 \section{Python}
 
+
+\qs{}{
+	Explain Installation of Python.
+}
+\sol{}
+
+\begin{verbatim}
+	Windows:
+
+		Download Python Installer: Visit the official Python website, 
+		download the installer, and choose the appropriate version (32-bit or 64-bit).
+
+		Run Installer: Double-click the installer file and follow the prompts. 
+		Make sure to check the box that says "Add Python to PATH".
+
+		Complete Installation: Follow the installation wizard's instructions. 
+		Python will be installed in C:\PythonXX\ (where XX is the version number).
+
+		Verify Installation: Open a command prompt, type python --version, and press Enter.
+		 You should see the installed Python version.
+
+	macOS:
+
+		Install Homebrew (optional): If you prefer Homebrew, 
+		open Terminal and run the Homebrew installation command.
+
+		Install Python: Use Homebrew (brew install python) or 
+		download the macOS installer from python.org and run it.
+
+		Verify Installation: Open Terminal and type 
+		python3 --version to verify the installation.
+
+	Linux (Ubuntu/Debian):
+
+		Update Package Lists: Open Terminal and run sudo apt update.
+
+		Install Python: Run sudo apt install python3 in Terminal to install Python 3.
+
+		Verify Installation: After installation, type python3 --version in Terminal to verify.
+
+\end{verbatim}
+
+\newpage
+
+\qs{}{To print different types of data 
+	types with multiline and single line comments.}
+
+\sol{}
+
+\begin{lstlisting}[language=Python]
+
+	# Single-line comment: Printing different data types
+	print("Data types:")
+
+	# Integer data type
+	num = 10
+	print("Integer:", num)
+
+	# Float data type
+	float_num = 3.14
+	print("Float:", float_num)
+
+	# String data type
+	string = "Hello, World!"
+	print("String:", string)
+
+	# Boolean data type
+	bool_value = True
+	print("Boolean:", bool_value)
+
+	"""
+	Multiline comment:
+	List data type
+	"""
+	my_list = [1, 2, 3, 4, 5]
+	print("List:", my_list)
+
+	"""
+	Multiline comment:
+	Tuple data type
+	"""
+	my_tuple = (1, 2, 3, 4, 5)
+	print("Tuple:", my_tuple)
+
+	"""
+	Multiline comment:
+	Dictionary data type
+	"""
+	my_dict = {'a': 1, 'b': 2, 'c': 3}
+	print("Dictionary:", my_dict)
+
+	"""
+	Multiline comment:
+	Set data type
+	"""
+	my_set = {1, 2, 3, 4, 5}
+	print("Set:", my_set)
+
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+
+	Output:
+
+	Data types:
+	Integer: 10
+	Float: 3.14
+	String: Hello, World!
+	Boolean: True
+	List: [1, 2, 3, 4, 5]
+	Tuple: (1, 2, 3, 4, 5)
+	Dictionary: {'a': 1, 'b': 2, 'c': 3}
+	Set: {1, 2, 3, 4, 5}
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+
+\newpage
+
+\qs{}{To print the largest number of three numbers using if else and elif.}
+
+\sol{}
+
+\begin{lstlisting}[language=Python]
+
+	# Three numbers
+	num1 = 10
+	num2 = 20
+	num3 = 15
+
+	# Check which number is largest
+	if num1 >= num2 and num1 >= num3:
+		largest_number = num1
+	elif num2 >= num1 and num2 >= num3:
+		largest_number = num2
+	else:
+		largest_number = num3
+
+	# Print the result
+	print("The largest number among", num1, ",", 
+		num2, ", and", num3, "is:", largest_number)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	The largest number among 10 , 20 , and 15 is: 20
+
+
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{Write a program to print number I-IO using a while loop.}
+\sol{}
+\begin{lstlisting}[language=Python]
+	# Initialize the starting number
+	number = 1
+
+	# Print numbers from 1 to 10 using a while loop
+	while number <= 10:
+		print(number)
+		number += 1
+
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to check prime numbers between 1-100 using a for loop.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Iterate through numbers from 1 to 100
+	for num in range(1, 101):
+		# Check if the number is greater than 1
+		if num > 1:
+			# Check for factors
+			for i in range(2, int(num ** 0.5) + 1):
+				if (num % i) == 0:
+					break
+			else:
+				print(num, "is a prime number.")
+
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	2 is a prime number.
+	3 is a prime number.
+	5 is a prime number.
+	7 is a prime number.
+	11 is a prime number.
+	13 is a prime number.
+	17 is a prime number.
+	19 is a prime number.
+	23 is a prime number.
+	29 is a prime number.
+	31 is a prime number.
+	37 is a prime number.
+	41 is a prime number.
+	43 is a prime number.
+	47 is a prime number.
+	53 is a prime number.
+	59 is a prime number.
+	61 is a prime number.
+	67 is a prime number.
+	71 is a prime number.
+	73 is a prime number.
+	79 is a prime number.
+	83 is a prime number.
+	89 is a prime number.
+	97 is a prime number.
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+\qs{}{Write a program to concatenate two strings using + operator}
+\sol{}
+\begin{lstlisting}[language=Python]
+	# Two strings to concatenate
+	string1 = "Hello world"
+	string2 = ".This is always constant"
+
+	# Concatenate the strings using the + operator
+	concatenated_string = string1 + " " + string2
+
+	# Print the concatenated string
+	print("Concatenated string:", concatenated_string)
+
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Concatenated string: Hello world .This is always constant
+
+
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to reverse a string using slicing
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Input string
+	input_string = "Hello, World!"
+
+	# Reverse the string using slicing
+	reversed_string = input_string[::-1]
+
+	# Print the reversed string
+	print("Original String:", input_string)
+	print("Reversed String:", reversed_string)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Original String: Hello, World!
+	Reversed String: !dlroW ,olleH
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+\qs{}{
+Write a program to perform different methods of string like: len(atleast 5)
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+	# Input string
+	input_string = "Hello, World!"
+
+	# Length of the string
+	length = len(input_string)
+	print("Length of the string:", length)
+
+	# Convert string to uppercase
+	uppercase_string = input_string.upper()
+	print("Uppercase string:", uppercase_string)
+
+	# Convert string to lowercase
+	lowercase_string = input_string.lower()
+	print("Lowercase string:", lowercase_string)
+
+	# Count occurrences of a substring
+	substring = "o"
+	count = input_string.count(substring)
+	print("Number of occurrences of 'o':", count)
+
+	# Replace substring
+	old_substring = "World"
+	new_substring = "Python"
+	replaced_string = input_string.replace(old_substring, new_substring)
+	print("String after replacement:", replaced_string)
+
+	# Check if string starts with a substring
+	substring_to_check = "Hello"
+	starts_with = input_string.startswith(substring_to_check)
+	print(f"String starts with '{substring_to_check}':", starts_with)
+
+	# Check if string ends with a substring
+	substring_to_check = "!"
+	ends_with = input_string.endswith(substring_to_check)
+	print(f"String ends with '{substring_to_check}':", ends_with)
+
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Length of the string: 13
+	Uppercase string: HELLO, WORLD!
+	Lowercase string: hello, world!
+	Number of occurrences of 'o': 2
+	String after replacement: Hello, Python!
+	String starts with 'Hello': True
+	String ends with '!': True
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to traverse all the characters of a string using a for loop.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+	# Input string
+	input_string = "Hello, World!"
+
+	# Traverse all characters of the string using a for loop
+	print("Traversing all characters of the string using a for loop:")
+	for char in input_string:
+		print(char)
+
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Traversing all characters of the string using a for loop:
+	H
+	e
+	l
+	l
+	o
+	,
+	 
+	W
+	o
+	r
+	l
+	d
+	!
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+ Write a program to Print abecederian series
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Function to check if a word is abecedarian
+	def is_abecedarian(word):
+		"""
+		Function to check if a word is abecedarian.
+
+		Parameters:
+		word (str): The word to check.
+
+		Returns:
+		bool: True if the word is abecedarian, False otherwise.
+		"""
+		# Iterate through each character in the word
+		for i in range(len(word) - 1):
+			# Check if the current character is greater than the next character
+			if word[i] > word[i + 1]:
+				return False
+		return True
+
+	# Main program to print abecedarian series
+	def print_abecedarian_series():
+		"""
+		Function to print abecedarian series.
+		"""
+		# Starting letter
+		start_letter = 'a'
+
+		# Loop to generate and print abecedarian words
+		while start_letter <= 'z':
+			print(start_letter)
+			start_letter = chr(ord(start_letter) + 1)
+
+	# Print the abecedarian series
+	print("Abecedarian series:")
+	print_abecedarian_series()
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Abecedarian series:
+	a
+	b
+	c
+	d
+	e
+	f
+	g
+	h
+	i
+	j
+	k
+	l
+	m
+	n
+	o
+	p
+	q
+	r
+	s
+	t
+	u
+	v
+	w
+	x
+	...
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to check whether a string is present in another string or not.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	def check_substring(main_string, substring):
+		"""
+		Function to check whether a substring is present in a main string.
+
+		Parameters:
+		main_string (str): The main string.
+		substring (str): The substring to check.
+
+		Returns:
+		bool: True if substring is present in main string, False otherwise.
+		"""
+		return substring in main_string
+
+	# Example usage:
+	main_string = "Hello, World!"
+	substring1 = "Hello"
+	substring2 = "Python"
+
+	# Check if substrings are present in the main string
+	print(f"'\{substring1\}' is present in '\{main_string\}':", check_substring(main_string, substring1))
+	print(f"'\{substring2\}' is present in '\{main_string\}':", check_substring(main_string, substring2))
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+	
+	'Hello' is present in 'Hello, World!': True
+	'Python' is present in 'Hello, World!': False
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+ Write a program to print \\
+ A \\
+ ABC \\
+ ABCD \\
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Number of rows for the pattern
+	num_rows = 4
+
+	# Outer loop to iterate over each rowi
+	for i in range(1, num_rows + 1):
+		# Inner loop to print characters from 'A' to 'A + i - 1'
+		for j in range(ord('A'), ord('A') + i):
+			print(chr(j), end="")
+		print()  # Move to the next line after printing each row
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	A
+	AB
+	ABC
+	ABCD
+	
+	
+	Rishabh Rathore
+	0827CI211155
+
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to Create a list with different data types.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+# Create a list with different data types
+my_list = [1, "Hello", 3.14, True, [1, 2, 3]]
+
+# Print the list
+print("List with different data types:", my_list)
+print("\n")
+print("Rishabh Rathore")
+print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	List with different data types: [1, 'Hello', 3.14, True, [1, 2, 3]]
+
+
+	Rishabh Rathore
+	0827CI211155
+	
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to take user input in a list from eval\(\).
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Take user input as a string
+	user_input_str = input("Enter elements of the list separated by commas: ")
+
+	# Convert the user input string to a list using eval()
+	try:
+		user_list = eval(user_input_str)
+		if not isinstance(user_list, list):
+			raise ValueError("Input is not a valid list.")
+	except Exception as e:
+		print("Error:", e)
+	else:
+		print("User input list:", user_list)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Enter elements of the list separated by commas: 12,18,24,7,10
+	Error: Input is not a valid list.
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to append five elements in a list by using for loop and append\(\).
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Initialize an empty list
+	my_list = []
+
+	# Append five elements to the list using a for loop and append() method
+	for i in range(1, 6):
+		my_list.append(i)
+
+	# Print the list
+	print("List after appending five elements:", my_list)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	List after appending five elements: [1, 2, 3, 4, 5]
+
+
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to sort a list in both ascending and descending order.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Original list
+	my_list = [5, 2, 8, 1, 9]
+
+	# Sort the list in ascending order using sort() method
+	my_list.sort()
+	print("List sorted in ascending order:", my_list)
+
+	# Sort the list in descending order using sorted() function
+	descending_list = sorted(my_list, reverse=True)
+	print("List sorted in descending order:", descending_list)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	List sorted in ascending order: [1, 2, 5, 8, 9]
+	List sorted in descending order: [9, 8, 5, 2, 1]
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to count the occurrences of an element in a list.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Original list
+	my_list = [1, 2, 3, 4, 2, 3, 2, 5, 2]
+
+	# Element to count occurrences
+	element_to_count = 2
+
+	# Count occurrences of the element in the list
+	occurrences = my_list.count(element_to_count)
+
+	# Print the result
+	print(f"The element {element_to_count} occurs {occurrences} times in the list.")
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	The element 2 occurs 4 times in the list.
+
+
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to find the index of an element in the list.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+	# Original list
+	my_list = [10, 20, 30, 40, 50]
+
+	# Element to find index
+	element_to_find = 30
+
+	try:
+		# Find the index of the element in the list
+		index = my_list.index(element_to_find)
+		print(f"The index of {element_to_find} in the list is:", index)
+	except ValueError:
+		print(f"The element {element_to_find} is not present in the list.")
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+
+	Output:
+
+	The index of 30 in the list is: 2
+
+
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to swap the first and last element of a list.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+	# Original list
+	my_list = [10, 20, 30, 40, 50]
+	print("List before swaping : ",my_list)
+	# Swap the first and last elements of the list
+	if len(my_list) >= 2:
+		my_list[0], my_list[-1] = my_list[-1], my_list[0]
+
+	# Print the modified list
+	print("List after swapping first and last elements:", my_list)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	List before swaping :  [10, 20, 30, 40, 50]
+	List after swapping first and last elements: [50, 20, 30, 40, 10]
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to swap two no in list with given position.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	def swap_elements(lst, pos1, pos2):
+		"""
+		Function to swap two elements in a list at given positions.
+
+		Parameters:
+		lst (list): The input list.
+		pos1 (int): The position of the first element to swap.
+		pos2 (int): The position of the second element to swap.
+
+		Returns:
+		list: The list with elements swapped.
+		"""
+		# Check if positions are within the range of the list
+		if 0 <= pos1 < len(lst) and 0 <= pos2 < len(lst):
+			# Swap the elements
+			lst[pos1], lst[pos2] = lst[pos2], lst[pos1]
+		else:
+			print("Positions are out of range. Swapping not possible.")
+		return lst
+
+	# Original list
+	my_list = [10, 20, 30, 40, 50]
+
+	# Positions to swap
+	position1 = 1
+	position2 = 3
+
+	# Swap elements at given positions
+	modified_list = swap_elements(my_list, position1, position2)
+
+	# Print the modified list
+	print("List after swapping elements at positions", position1, "and", position2, ":", modified_list)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	
+	Output:
+
+	List after swapping elements at positions 1 and 3 : [10, 40, 30, 20, 50]
+
+
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to check whether a no is in the list or not sublist even and odd.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Original list
+	my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+	# Number to check
+	number_to_check = 5
+
+	# Check if the number is present in the list
+	if number_to_check in my_list:
+		print(f"The number {number_to_check} is present in the list.")
+	else:
+		print(f"The number {number_to_check} is not present in the list.")
+
+	# Separate the list into two sublists containing even and odd numbers
+	even_numbers = []
+	odd_numbers = []
+
+	for num in my_list:
+		if num % 2 == 0:
+			even_numbers.append(num)
+		else:
+			odd_numbers.append(num)
+
+	# Print the sublists
+	print("Even numbers in the list:", even_numbers)
+	print("Odd numbers in the list:", odd_numbers)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	The number 5 is present in the list.
+	Even numbers in the list: [2, 4, 6, 8]
+	Odd numbers in the list: [1, 3, 5, 7, 9]
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to demonstrate the difference between remove and pop method in a list.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+
+	# Original list
+	my_list = [1, 2, 3, 4, 5]
+
+	# Demonstrate remove() method
+	removed_element = 3
+	print("Original list before using remove():", my_list)
+	my_list.remove(removed_element)
+	print("List after using remove():", my_list)
+	print("Removed element:", removed_element)
+
+	# Demonstrate pop() method
+	index_to_pop = 2
+	popped_element = my_list.pop(index_to_pop)
+	print("Original list before using pop():", my_list)
+	print("Popped element at index", index_to_pop, ":", popped_element)
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Original list before using remove(): [1, 2, 3, 4, 5]
+	List after using remove(): [1, 2, 4, 5]
+	Removed element: 3
+	Original list before using pop(): [1, 2, 5]
+	Popped element at index 2 : 4
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
+
+\qs{}{
+Write a program to insert an element into a list at a position given by the user.
+}
+\sol{}
+\begin{lstlisting}[language=Python]
+	# Original list
+	my_list = [1, 2, 3, 4, 5]
+
+	# Get element and position from the user
+	element_to_insert = int(input("Enter the element to insert: "))
+	position = int(input("Enter the position to insert the element: "))
+
+	# Check if the position is within the range of the list
+	if 0 <= position <= len(my_list):
+		# Insert the element at the specified position
+		my_list.insert(position, element_to_insert)
+		print("List after inserting the element:", my_list)
+	else:
+		print("Invalid position. Element cannot be inserted.")
+	print("\n")
+	print("Rishabh Rathore")
+	print("0827CI211155")
+\end{lstlisting}
+
+\begin{verbatim}
+	Output:
+
+	Enter the element to insert: 12
+	Enter the position to insert the element: 2
+	List after inserting the element: [1, 2, 12, 3, 4, 5]
+	
+	
+	Rishabh Rathore
+	0827CI211155
+\end{verbatim}
+\newpage
+
 % q 1
 \qs{}{Explain the difference between the list, tuple , set and dictionary ?}
 \sol 

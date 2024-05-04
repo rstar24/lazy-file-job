@@ -65,6 +65,7 @@ src_dir = os.path.join(proj_root_dir,'src')
 file_tex_template_path = os.path.join(src_dir,'file')
 front_tex_path = os.path.join(src_dir,'front-page')
 cert_tex_path = os.path.join(src_dir,'certificate')
+index_page_path = os.path.join(src_dir,'index-page.pdf')
 
 # Making directory for each student
 students = pd.read_csv('students.csv')
@@ -272,6 +273,7 @@ def merge_output():
             merger = PdfWriter()
             merger.append(front_paths[i])
             merger.append(cert_paths[i])
+            merger.append(index_page_path)
             merger.append(file_paths[i])
             merger.write(output_paths[i])
             merger.close()
