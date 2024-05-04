@@ -461,7 +461,7 @@
 	\begin{center}	
 		{\LARGE \textbf{#1} \par}\vspace{2\baselineskip} 
 		{\large\textbf{Department of \@dept}\par}\vspace{0.25\baselineskip} 
-		{\large\textbf{Acropolis Institute of Research \& Technology,Indore}}
+		{\large\textbf{Acropolis Institute of   Technology \& Research,Indore}}
 	\end{center}
 \vspace{1.5\baselineskip} 
 
