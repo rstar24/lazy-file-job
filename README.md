@@ -5,11 +5,11 @@
 * I have wasted good amount of time learning system scripting 
 * This is good time to put it to some real good work
 * So, Here I am making a simple python script that is going 
-  to make all the python file assingment for me and my friends.
+  to make all the python file assignment for me and my friends.
 
 # About 
 * This script is totally based on windows 
-* It is simple and straingt forward approach everything is in this 
+* It is simple and straight forward approach everything is in this 
   main.py file.
 
 
